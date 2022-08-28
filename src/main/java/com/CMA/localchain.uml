@@ -1,0 +1,2416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_Yi-oUBvjEe2eBpLFwjhdNQ" name="localchain">
+    <eAnnotations xmi:id="_Yn3vYBvjEe2eBpLFwjhdNQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_Yn4WcBvjEe2eBpLFwjhdNQ" source="codegen">
+        <details xmi:id="_Yn49gBvjEe2eBpLFwjhdNQ" key="codegenDirectory" value="/localchain/src/main/java"/>
+        <details xmi:id="_Z7prcBvjEe2eBpLFwjhdNQ" key="AssociatedSourceCode" value="/localchain/src/main/java/com/CMA/TxInput.java;756024314/1;/localchain/src/main/java/com/CMA/CMAConsensus.java;904643490/1;/localchain/src/main/java/com/CMA/Constants.java;3698903638/1;/localchain/src/main/java/com/CMA/CryptoService.java;2937799553/1;/localchain/src/main/java/com/CMA/Main.java;911692569/1;/localchain/src/main/java/com/CMA/MineUtils.java;2903884304/1;/localchain/src/main/java/com/CMA/Miner.java;78823134/1;/localchain/src/main/java/com/CMA/Network.java;1426970970/1;/localchain/src/main/java/com/CMA/PreferenceModels.java;922439800/1;/localchain/src/main/java/com/CMA/Block.java;3956687568/1;/localchain/src/main/java/com/CMA/TxOutput.java;2722496963/1;/localchain/src/main/java/com/CMA/TxRecord.java;608550815/1;/localchain/src/main/java/com/CMA/Wallet.java;2160585960/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_ZInsABvjEe2eBpLFwjhdNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_ZIoTEBvjEe2eBpLFwjhdNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_ZIo6IBvjEe2eBpLFwjhdNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_ZIo6IRvjEe2eBpLFwjhdNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_ZIo6IhvjEe2eBpLFwjhdNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_ZIo6IxvjEe2eBpLFwjhdNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_ZIo6JBvjEe2eBpLFwjhdNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_ZIo6JRvjEe2eBpLFwjhdNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_ZIqIQBvjEe2eBpLFwjhdNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZGaFgBvjEe2eBpLFwjhdNQ" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZGoH8BvjEe2eBpLFwjhdNQ" name="CMA">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZIaQoBvjEe2eBpLFwjhdNQ" name="TxInput">
+          <ownedAttribute xmi:id="_Zim5UBvjEe2eBpLFwjhdNQ" name="txOutputId">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZipVkRvjEe2eBpLFwjhdNQ" name="UTXO" type="_ZK2goBvjEe2eBpLFwjhdNQ" association="_ZjoNABvjEe2eBpLFwjhdNQ"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjGBgBvjEe2eBpLFwjhdNQ" name="TxInput" specification="_ZIxdABvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjGokBvjEe2eBpLFwjhdNQ" name="txOutputId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjGokRvjEe2eBpLFwjhdNQ" type="_ZIaQoBvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.txOutputId = txOutputId;
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZIxdABvjEe2eBpLFwjhdNQ" name="TxInput" method="_ZjGBgBvjEe2eBpLFwjhdNQ">
+            <eAnnotations xmi:id="_ZI1ucBvjEe2eBpLFwjhdNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_ZI2VgBvjEe2eBpLFwjhdNQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZIyrIBvjEe2eBpLFwjhdNQ" name="txOutputId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZI28kBvjEe2eBpLFwjhdNQ" type="_ZIaQoBvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZI5_4BvjEe2eBpLFwjhdNQ" name="CMAConsensus">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjK6ABvjEe2eBpLFwjhdNQ" name="executeCMAAlgo" specification="_ZI8cIBvjEe2eBpLFwjhdNQ">
+            <language>java</language>
+            <body>List&lt;Long> finalTimes = new ArrayList&lt;Long>();
+
+		Map&lt;String, Integer> selectedComitteeMembers = new HashMap&lt;>();
+		Map&lt;String, Integer> selectedMiner = new HashMap&lt;>();
+
+
+		Map&lt;String, Integer> priority = new HashMap&lt;>();
+		priority.put(Constants.PROCESSINGPOWER, 90);
+		priority.put(Constants.STAKE, 10);
+//		Map&lt;String, Integer> priority = PreferenceModels.generateNumericPreference();
+		List&lt;String> pref = new ArrayList&lt;>();
+		pref.add(Constants.PROCESSINGPOWER);
+		pref.add(Constants.STAKE);
+		for (int i = 0; i &lt; 10; i++) {
+			try {
+				System.out.println(&quot;RUNNING FOR &quot; + i);
+				final int cutOffScore = PreferenceModels.generateRandomNum(Constants.MIN_GEN_VAL, Constants.MAX_GEN_VAL);
+//				Map&lt;String, Integer> priority = PreferenceModels.generateNumericPreference();
+//				List&lt;String> pref = PreferenceModels.generatePriorityAndBalancePreference();
+				generateTransactions();
+				long startTime = System.nanoTime();
+
+				List&lt;Miner> committeeMembers = commiteeMemberElection(0, priority, cutOffScore);
+//				List&lt;Miner> committeeMembers = commiteeMemberElection(1, pref, cutOffScore);
+//				System.out.println(&quot;Commitee Memebers are: &quot; + committeeMembers);
+
+				// trapdoor distribution
+				ArrayList&lt;ArrayList&lt;Byte>> trapDoorKeys = CryptoService.generateTrapdoorKeys(committeeMembers.size());
+				distributeKeysToCommitteeMembers(committeeMembers, trapDoorKeys);
+//				System.out.println(committeeMembers);
+
+				startMining(committeeMembers);
+				// Repair Block
+				long endTime = System.nanoTime();
+				long totalTime = endTime - startTime;
+				System.out.println(totalTime);
+				finalTimes.add(totalTime);
+
+				for (Miner member : committeeMembers) {
+					if(selectedComitteeMembers.containsKey(member.getName())) {
+						selectedComitteeMembers.put(member.getName(), selectedComitteeMembers.get(member.getName())+1);
+					} else {
+						selectedComitteeMembers.put(member.getName(), 1);
+					}
+					
+				}
+				Miner member = committeeMembers.get(0);
+				if(selectedMiner.containsKey(member.getName())) {
+					selectedMiner.put(member.getName(), selectedComitteeMembers.get(member.getName())+1);
+				} else {
+					selectedMiner.put(member.getName(), 1);
+				}
+			} catch (NoSuchAlgorithmException e) {
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+			}
+		}
+
+		System.out.println(finalTimes);
+		System.out.println(selectedComitteeMembers);
+		System.out.println(selectedMiner);
+
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjMIIBvjEe2eBpLFwjhdNQ" name="startMining" specification="_Zh0PIBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjMIIRvjEe2eBpLFwjhdNQ" name="committeeMembers" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <language>java</language>
+            <body>Miner selectedMiner = committeeMembers.get(0);
+		try {
+			selectedMiner.startMining();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjQZkBvjEe2eBpLFwjhdNQ" name="commiteeMemberElection" specification="_Zh35gBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjQZkRvjEe2eBpLFwjhdNQ" name="typeOfAlgo">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjQZkhvjEe2eBpLFwjhdNQ" name="priority" type="_Zgv4IRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjRAoBvjEe2eBpLFwjhdNQ" name="cutOffScore">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjRAoRvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <name xsi:nil="true"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjRAohvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if (typeOfAlgo == 0) {
+			return PreferenceModels.numericalPreference(priority, cutOffScore);
+
+		} else {
+			try {
+				return Network.getMinerRandom(cutOffScore);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return null;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjS10BvjEe2eBpLFwjhdNQ" name="commiteeMemberElection" specification="_Zh8K8BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjS10RvjEe2eBpLFwjhdNQ" name="typeOfAlgo">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjS10hvjEe2eBpLFwjhdNQ" name="priority" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjS10xvjEe2eBpLFwjhdNQ" name="cutOffScore">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjS11BvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <name xsi:nil="true"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjS11RvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if (typeOfAlgo == 1) {
+			return PreferenceModels.prioritizedPreference(priority, cutOffScore);
+		} else if (typeOfAlgo == 2) {
+			return PreferenceModels.balancedPreference(priority, cutOffScore);
+
+		} else {
+			try {
+				return Network.getMinerRandom(cutOffScore);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return null;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjTc4BvjEe2eBpLFwjhdNQ" name="distributeKeysToCommitteeMembers" specification="_Zh9ZEBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjTc4RvjEe2eBpLFwjhdNQ" name="committeeMembers" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjTc4hvjEe2eBpLFwjhdNQ" name="trapDoorKeys" type="_ZguqARvjEe2eBpLFwjhdNQ"/>
+            <language>java</language>
+            <body>int i = 0;
+		for (Miner miner : committeeMembers) {
+			miner.setTrapDoorKey(trapDoorKeys.get(i));
+			if (i &lt; trapDoorKeys.size() - 1)
+				i += 1;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjTc4xvjEe2eBpLFwjhdNQ" name="generateTransactions" specification="_ZI-RUBvjEe2eBpLFwjhdNQ">
+            <language>java</language>
+            <body>PublicKey pubKey = Network.getNetworkPublicKey();
+		PrivateKey privKey = Network.getNetworkPrivateKey();
+
+		Miner trader = new Miner(&quot;Trader&quot;, 0, 0.0, 0.0, 0.0);
+
+		TxRecord newTransaction = new TxRecord(pubKey, trader.getWallet().publicKey, 1000, null);
+		newTransaction.generateSignature(privKey);
+		Network.addUncofirmedTxRecord(newTransaction);
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZI8cIBvjEe2eBpLFwjhdNQ" name="executeCMAAlgo" isStatic="true" method="_ZjK6ABvjEe2eBpLFwjhdNQ"/>
+          <ownedOperation xmi:id="_ZI-RUBvjEe2eBpLFwjhdNQ" name="generateTransactions" isStatic="true" method="_ZjTc4xvjEe2eBpLFwjhdNQ"/>
+          <ownedOperation xmi:id="_Zh0PIBvjEe2eBpLFwjhdNQ" name="startMining" visibility="private" isStatic="true" method="_ZjMIIBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zh0PIRvjEe2eBpLFwjhdNQ" name="committeeMembers" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Zh35gBvjEe2eBpLFwjhdNQ" name="commiteeMemberElection" isStatic="true" method="_ZjQZkBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zh4gkBvjEe2eBpLFwjhdNQ" name="typeOfAlgo">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Zh4gkRvjEe2eBpLFwjhdNQ" name="priority" type="_Zgv4IRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zh4gkhvjEe2eBpLFwjhdNQ" name="cutOffScore">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Zh4gkxvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zh4glBvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Zh8K8BvjEe2eBpLFwjhdNQ" name="commiteeMemberElection" isStatic="true" method="_ZjS10BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zh8K8RvjEe2eBpLFwjhdNQ" name="typeOfAlgo">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Zh8K8hvjEe2eBpLFwjhdNQ" name="priority" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zh8K8xvjEe2eBpLFwjhdNQ" name="cutOffScore">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Zh8K9BvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zh8K9RvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Zh9ZEBvjEe2eBpLFwjhdNQ" name="distributeKeysToCommitteeMembers" isStatic="true" method="_ZjTc4BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zh9ZERvjEe2eBpLFwjhdNQ" name="committeeMembers" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zh9ZEhvjEe2eBpLFwjhdNQ" name="trapDoorKeys" type="_ZguqARvjEe2eBpLFwjhdNQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZJB7sBvjEe2eBpLFwjhdNQ" name="Constants">
+          <ownedAttribute xmi:id="_Zip8oRvjEe2eBpLFwjhdNQ" name="STAKE" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZiqjsBvjEe2eBpLFwjhdNQ" value="&quot;stake&quot;"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZiqjsRvjEe2eBpLFwjhdNQ" name="PROCESSINGPOWER" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZirKwBvjEe2eBpLFwjhdNQ" value="&quot;processingPower&quot;"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZirKwRvjEe2eBpLFwjhdNQ" name="COST" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZirKwhvjEe2eBpLFwjhdNQ" value="&quot;cost&quot;"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZirKwxvjEe2eBpLFwjhdNQ" name="DISKSPACE" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZirKxBvjEe2eBpLFwjhdNQ" value="&quot;diskSpace&quot;"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_7Z3kIB5TEe2eBpLFwjhdNQ" name="MIN_GEN_VAL" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_7Z4yQB5TEe2eBpLFwjhdNQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_7Z4yQR5TEe2eBpLFwjhdNQ" name="MAX_GEN_VAL" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_7Z4yQh5TEe2eBpLFwjhdNQ" value="50"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZJEX8BvjEe2eBpLFwjhdNQ" name="CryptoService">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjTc5BvjEe2eBpLFwjhdNQ" name="applySha256" specification="_ZJHbQBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjTc5RvjEe2eBpLFwjhdNQ" name="input">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjTc5hvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>try {
+         MessageDigest digest = MessageDigest.getInstance(&quot;SHA-256&quot;);
+
+         //Applies sha256 to our input,
+         byte[] hash = digest.digest(input.getBytes(&quot;UTF-8&quot;));
+
+         StringBuffer hexString = new StringBuffer(); // This will contain hash as hexidecimal
+         for (int i = 0; i &lt; hash.length; i++) {
+             String hex = Integer.toHexString(0xff &amp; hash[i]);
+             if(hex.length() == 1) hexString.append('0');
+             hexString.append(hex);
+         }
+         return hexString.toString();
+     }
+     catch(Exception e) {
+         throw new RuntimeException(e);
+     }
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjUD8BvjEe2eBpLFwjhdNQ" name="applyECDSASig" specification="_Zh-AIhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjUD8RvjEe2eBpLFwjhdNQ" name="privateKey" type="_ZgojYBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjUD8hvjEe2eBpLFwjhdNQ" name="input">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjUD8xvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjUD9BvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Signature dsa;
+     byte[] output = new byte[0];
+     try {
+         dsa = Signature.getInstance(&quot;ECDSA&quot;, &quot;BC&quot;);
+         dsa.initSign(privateKey);
+         byte[] strByte = input.getBytes();
+         dsa.update(strByte);
+         byte[] realSig = dsa.sign();
+         output = realSig;
+     } catch (Exception e) {
+         throw new RuntimeException(e);
+     }
+     return output;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjUD9RvjEe2eBpLFwjhdNQ" name="verifyECDSASig" specification="_ZiAcYBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjUD9hvjEe2eBpLFwjhdNQ" name="publicKey" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjUD9xvjEe2eBpLFwjhdNQ" name="data">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjUD-BvjEe2eBpLFwjhdNQ" name="signature">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjUD-RvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjUD-hvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>try {
+         Signature ecdsaVerify = Signature.getInstance(&quot;ECDSA&quot;, &quot;BC&quot;);
+         ecdsaVerify.initVerify(publicKey);
+         ecdsaVerify.update(data.getBytes());
+         return ecdsaVerify.verify(signature);
+     }catch(Exception e) {
+         throw new RuntimeException(e);
+     }
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjUD-xvjEe2eBpLFwjhdNQ" name="getStringFromKey" specification="_ZiIYMRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjUD_BvjEe2eBpLFwjhdNQ" name="key" type="_ZiFU4BvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjUD_RvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return Base64.getEncoder().encodeToString(key.getEncoded());
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjUD_hvjEe2eBpLFwjhdNQ" name="getMerkleRoot" specification="_ZiI_QBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjUD_xvjEe2eBpLFwjhdNQ" name="transactions" type="_ZguqARvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjUEABvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>int count = transactions.size();
+
+     List&lt;String> previousTreeLayer = new ArrayList&lt;String>();
+     for(TxRecord transaction : transactions) {
+         previousTreeLayer.add(transaction.txId);
+     }
+     List&lt;String> treeLayer = previousTreeLayer;
+
+     while(count > 1) {
+         treeLayer = new ArrayList&lt;String>();
+         for(int i=1; i &lt; previousTreeLayer.size(); i+=2) {
+             treeLayer.add(applySha256(previousTreeLayer.get(i-1) + previousTreeLayer.get(i)));
+         }
+         count = treeLayer.size();
+         previousTreeLayer = treeLayer;
+     }
+
+     String merkleRoot = (treeLayer.size() == 1) ? treeLayer.get(0) : &quot;&quot;;
+     return merkleRoot;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjUEARvjEe2eBpLFwjhdNQ" name="getPublicKeyFromString" specification="_ZJJQcBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjUEAhvjEe2eBpLFwjhdNQ" name="publicKey">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjUEAxvjEe2eBpLFwjhdNQ" type="_ZgpKcRvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>try {
+         EncodedKeySpec publicKeySpace = new X509EncodedKeySpec(Base64.getDecoder().decode(publicKey));
+         KeyFactory keyFactory = KeyFactory.getInstance(&quot;ECDSA&quot;, &quot;BC&quot;);
+         return keyFactory.generatePublic(publicKeySpace);
+     } catch (Exception e) {
+         System.out.println(&quot;ERR in getting PublicK from DB string&quot;);
+     }
+
+     return null;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjUEBBvjEe2eBpLFwjhdNQ" name="getPrivateKeyFromString" specification="_ZJLssBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjUEBRvjEe2eBpLFwjhdNQ" name="privateKey">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjUEBhvjEe2eBpLFwjhdNQ" type="_ZgojYBvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>try {
+         EncodedKeySpec privateKeySpace = new PKCS8EncodedKeySpec(Base64.getDecoder().decode(privateKey));
+         KeyFactory keyFactory = KeyFactory.getInstance(&quot;ECDSA&quot;, &quot;BC&quot;);
+         return keyFactory.generatePrivate(privateKeySpace);
+     } catch (Exception e) {
+         System.out.println(&quot;ERR in getting PrivateK from DB string&quot;);
+     }
+
+     return null;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjUEBxvjEe2eBpLFwjhdNQ" name="generateTrapdoorKeys" specification="_ZJNh4BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjUECBvjEe2eBpLFwjhdNQ" name="noOfCommitteeMember">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjUECRvjEe2eBpLFwjhdNQ" type="_ZguqARvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>KeyPairGenerator kpg = KeyPairGenerator.getInstance(&quot;RSA&quot;);
+ 	kpg.initialize(2048);
+ 	KeyPair kp = kpg.genKeyPair();
+ 	Key publicKey = kp.getPublic();
+ 	Key privateKey = kp.getPrivate();
+ 	
+ 	byte[] encodedPublicKey = publicKey.getEncoded();
+ 	byte[] encodedPrivateKey = privateKey.getEncoded();
+ 	
+ 	int divLen = noOfCommitteeMember;
+ 	int divLenPublic = noOfCommitteeMember;
+ 	if(encodedPrivateKey.length&lt;noOfCommitteeMember) {
+ 		divLen = encodedPrivateKey.length;
+ 		
+ 	}
+ 	if(encodedPublicKey.length&lt;noOfCommitteeMember) {
+ 		divLenPublic = encodedPublicKey.length;
+ 	}
+ 	
+ 	 return splitKeyIntoEqualParts(encodedPrivateKey, divLen);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjUEChvjEe2eBpLFwjhdNQ" name="splitKeyIntoEqualParts" specification="_ZJRzUBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjUECxvjEe2eBpLFwjhdNQ" name="key">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjUEDBvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjUEDRvjEe2eBpLFwjhdNQ" name="divLen">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjUEDhvjEe2eBpLFwjhdNQ" type="_ZguqARvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>int i = 0;
+ 	final int NG = (key.length + divLen - 1) / divLen;
+ 	ArrayList&lt;ArrayList&lt;Byte>> ans= new ArrayList&lt;>();
+ 	while (i&lt;key.length) {
+ 		ArrayList&lt;Byte> temp = new ArrayList&lt;>();
+ 		for(int j=i;j&lt;i+NG &amp;&amp; j&lt;key.length;j++) {
+ 			temp.add(key[j]);
+ 		}
+ 		ans.add(temp);
+ 		i=i+NG;
+ 		
+			
+		}
+ 	return ans;
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZJHbQBvjEe2eBpLFwjhdNQ" name="applySha256" isStatic="true" method="_ZjTc5BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZJHbQRvjEe2eBpLFwjhdNQ" name="input">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZJHbQhvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZJJQcBvjEe2eBpLFwjhdNQ" name="getPublicKeyFromString" isStatic="true" method="_ZjUEARvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZJJ3gBvjEe2eBpLFwjhdNQ" name="publicKey">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZiJmUBvjEe2eBpLFwjhdNQ" type="_ZgpKcRvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZJLssBvjEe2eBpLFwjhdNQ" name="getPrivateKeyFromString" isStatic="true" method="_ZjUEBBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZJLssRvjEe2eBpLFwjhdNQ" name="privateKey">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZiJmURvjEe2eBpLFwjhdNQ" type="_ZgojYBvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZJNh4BvjEe2eBpLFwjhdNQ" name="generateTrapdoorKeys" isStatic="true" method="_ZjUEBxvjEe2eBpLFwjhdNQ" raisedException="_ZgbIABvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZJNh4RvjEe2eBpLFwjhdNQ" name="noOfCommitteeMember">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZiJmUhvjEe2eBpLFwjhdNQ" type="_ZguqARvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZJRzUBvjEe2eBpLFwjhdNQ" name="splitKeyIntoEqualParts" isStatic="true" method="_ZjUEChvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZJSaYBvjEe2eBpLFwjhdNQ" name="key">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZJUPkBvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZJSaYRvjEe2eBpLFwjhdNQ" name="divLen">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZiMCkBvjEe2eBpLFwjhdNQ" type="_ZguqARvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Zh-AIhvjEe2eBpLFwjhdNQ" name="applyECDSASig" isStatic="true" method="_ZjUD8BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zh-nMBvjEe2eBpLFwjhdNQ" name="privateKey" type="_ZgojYBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zh-nMRvjEe2eBpLFwjhdNQ" name="input">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Zh-nMhvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zh-nMxvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZiAcYBvjEe2eBpLFwjhdNQ" name="verifyECDSASig" isStatic="true" method="_ZjUD9RvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiAcYRvjEe2eBpLFwjhdNQ" name="publicKey" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiBDcBvjEe2eBpLFwjhdNQ" name="data">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZiBDcRvjEe2eBpLFwjhdNQ" name="signature">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZiBDcxvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZiBDchvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZiIYMRvjEe2eBpLFwjhdNQ" name="getStringFromKey" isStatic="true" method="_ZjUD-xvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiIYMhvjEe2eBpLFwjhdNQ" name="key" type="_ZiFU4BvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiIYMxvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZiI_QBvjEe2eBpLFwjhdNQ" name="getMerkleRoot" isStatic="true" method="_ZjUD_hvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiI_QRvjEe2eBpLFwjhdNQ" name="transactions" type="_ZguqARvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiI_QhvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZJa9QBvjEe2eBpLFwjhdNQ" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjUrABvjEe2eBpLFwjhdNQ" name="main" specification="_ZJenoBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjUrARvjEe2eBpLFwjhdNQ" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjUrAhvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Network network;
+		Scanner sc = new Scanner(System.in);
+		
+		Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+		
+		 System.out.println(&quot;Starting the network!&quot;);
+		 File f = new File(System.getProperty(&quot;user.dir&quot;) + &quot;/localchain.db&quot;);
+		 if (!f.exists()) {
+			 network = new Network();
+	         network.startNetwork();
+		 }
+		 
+		 int stake = 1;
+		 double cost = 1;
+		 
+		 for(int i=1;i&lt;=100;i++) {
+//			 Miner miner = new Miner(&quot;Miner_&quot;+Integer.toString(i), 
+//					(int) (Math.random() * 100), 
+//					Math.random() * 100,
+//					Math.random() * 100,
+//					Math.random() * 100) ;
+			 Miner miner = new Miner(&quot;Miner_&quot;+Integer.toString(i), 
+						i, 
+						(double)((i * 10) + i),
+						(double)i,
+						(double)(i * 10)) ;
+			 System.out.println(&quot;Adding: &quot; + miner.toString());
+			 Network.addMinerToDb(miner, i);
+	         
+		 }
+		 System.out.println(&quot;ADDED ALL MINERS&quot;);
+		 CMAConsensus.executeCMAAlgo();
+		 
+		 f.delete();
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZJenoBvjEe2eBpLFwjhdNQ" name="main" isStatic="true" method="_ZjUrABvjEe2eBpLFwjhdNQ" raisedException="_ZguC8RvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZJenoRvjEe2eBpLFwjhdNQ" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZJfOsBvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZJgc0BvjEe2eBpLFwjhdNQ" name="MineUtils">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjWgMBvjEe2eBpLFwjhdNQ" name="mine" specification="_ZhXjMBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjWgMRvjEe2eBpLFwjhdNQ" name="block" type="_ZKoeMBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjWgMhvjEe2eBpLFwjhdNQ" name="difficulty">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjWgMxvjEe2eBpLFwjhdNQ" type="_ZKoeMBvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>System.out.println(&quot;Starting mining:\n&quot;);
+     int nonce = 0;
+
+     String hash;
+     String target = getDificultyString(difficulty);
+     if (block.hash == null) {
+         block.randomness = nonce;
+         hash = calculateHash(block);
+         block.hash = hash;
+     }
+
+     while(!block.hash.substring( 0, difficulty).equals(target)) {
+         nonce++;
+         block.randomness = nonce;
+         hash = calculateHash(block);
+         block.hash = hash;
+     }
+
+     System.out.println(&quot;Block Mined!!!: &quot; + block.hash + &quot;  Randomness:&quot; + block.randomness);
+     return block;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjXuUBvjEe2eBpLFwjhdNQ" name="calculateHash" specification="_ZhamgBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjXuURvjEe2eBpLFwjhdNQ" name="block" type="_ZKoeMBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjXuUhvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return CryptoService.applySha256(
+         block.previousBlockHash +
+         Long.toString(block.timestamp) +
+         block.merkleRoot +
+         Double.toString(block.randomness)
+     );
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjXuUxvjEe2eBpLFwjhdNQ" name="getDificultyString" specification="_ZJhq8BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjXuVBvjEe2eBpLFwjhdNQ" name="difficulty">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjXuVRvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return new String(new char[difficulty]).replace('\0', '0');
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZJhq8BvjEe2eBpLFwjhdNQ" name="getDificultyString" visibility="private" method="_ZjXuUxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZJhq8RvjEe2eBpLFwjhdNQ" name="difficulty">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZJjgIBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZhXjMBvjEe2eBpLFwjhdNQ" name="mine" method="_ZjWgMBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZhYKQBvjEe2eBpLFwjhdNQ" name="block" type="_ZKoeMBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZhYKQRvjEe2eBpLFwjhdNQ" name="difficulty">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZhZYYBvjEe2eBpLFwjhdNQ" type="_ZKoeMBvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZhamgBvjEe2eBpLFwjhdNQ" name="calculateHash" visibility="private" method="_ZjXuUBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZhamgRvjEe2eBpLFwjhdNQ" name="block" type="_ZKoeMBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZhbNkBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZJkuQBvjEe2eBpLFwjhdNQ" name="Miner">
+          <ownedAttribute xmi:id="_ZirKxRvjEe2eBpLFwjhdNQ" name="name" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Zirx0BvjEe2eBpLFwjhdNQ" name="wallet" type="_ZLD8ABvjEe2eBpLFwjhdNQ" isReadOnly="true" association="_ZjqpQBvjEe2eBpLFwjhdNQ"/>
+          <ownedAttribute xmi:id="_Zirx0RvjEe2eBpLFwjhdNQ" name="stake" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Zirx0hvjEe2eBpLFwjhdNQ" name="processingPower" type="_ZiWaoBvjEe2eBpLFwjhdNQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_ZisY4BvjEe2eBpLFwjhdNQ" name="cost" type="_ZiWaoBvjEe2eBpLFwjhdNQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_ZisY4RvjEe2eBpLFwjhdNQ" name="diskSpace" type="_ZiWaoBvjEe2eBpLFwjhdNQ" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_ZisY4hvjEe2eBpLFwjhdNQ" name="localChain" type="_ZKoeMBvjEe2eBpLFwjhdNQ" isOrdered="true" isReadOnly="true" association="_ZjrQURvjEe2eBpLFwjhdNQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZisY4xvjEe2eBpLFwjhdNQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZisY5BvjEe2eBpLFwjhdNQ" name="trapDoorKey" isOrdered="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zis_8BvjEe2eBpLFwjhdNQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Zis_8RvjEe2eBpLFwjhdNQ" name="pickaxe" visibility="private" isLeaf="true" type="_ZJgc0BvjEe2eBpLFwjhdNQ" isReadOnly="true" association="_ZjrQVBvjEe2eBpLFwjhdNQ"/>
+          <interfaceRealization xmi:id="_ZiQUABvjEe2eBpLFwjhdNQ" client="_ZJkuQBvjEe2eBpLFwjhdNQ" supplier="_ZiNQsBvjEe2eBpLFwjhdNQ" contract="_ZiNQsBvjEe2eBpLFwjhdNQ"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjXuVhvjEe2eBpLFwjhdNQ" name="Miner" specification="_ZiXBsBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjXuVxvjEe2eBpLFwjhdNQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjXuWBvjEe2eBpLFwjhdNQ" name="stake">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjXuWRvjEe2eBpLFwjhdNQ" name="processingPower" type="_ZiWaoBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjXuWhvjEe2eBpLFwjhdNQ" name="cost" type="_ZiWaoBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjXuWxvjEe2eBpLFwjhdNQ" name="diskSpace" type="_ZiWaoBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjXuXBvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>super();
+		this.name = name;
+		this.wallet = new Wallet();
+		this.stake = stake;
+		this.processingPower = processingPower;
+		this.cost = cost;
+		this.diskSpace = diskSpace;
+		localChain = Network.getLatestChainFromFakeNetwork();
+     pickaxe = new MineUtils();
+//        Network.raiseMinerCount();
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVYBvjEe2eBpLFwjhdNQ" name="getPickaxe" specification="_ZJpmwBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVYRvjEe2eBpLFwjhdNQ" type="_ZJgc0BvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return pickaxe;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVYhvjEe2eBpLFwjhdNQ" name="toString" specification="_ZJqN0BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVYxvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return &quot;Miner [name=&quot; + name + &quot;, wallet=&quot; + wallet + &quot;, stake=&quot; + stake + &quot;, processingPower=&quot;
+				+ processingPower + &quot;, cost=&quot; + cost + &quot;, diskSpace=&quot; + diskSpace + &quot;, localChain=&quot; + localChain
+				+ &quot;, trapDoorKey=&quot; + trapDoorKey + &quot;, pickaxe=&quot; + pickaxe + &quot;]&quot;;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVZBvjEe2eBpLFwjhdNQ" name="compareTo" specification="_Zhdp0BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVZRvjEe2eBpLFwjhdNQ" name="m" type="_ZJkuQBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjYVZhvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return 0;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WwbsoB5UEe2eBpLFwjhdNQ" name="startMining" specification="_WwU-8B5UEe2eBpLFwjhdNQ">
+            <language>java</language>
+            <body>System.out.println(&quot;START MINING FOR &quot;+this.name);
+		 List&lt;Block> networkChain;
+		 networkChain = Network.getLatestChainFromFakeNetwork();
+      if (localChain.size() &lt; networkChain.size()) {
+          localChain = networkChain;
+      }
+
+      Network.adaptDifficulty();
+
+      Block lastBlock = Network.getLastBlockInChain();
+      System.out.println(lastBlock.toString());
+      if (!lastBlock.isMined()) {
+     	
+     	 Double netweorkDifficulty = processingPower /1000;
+     	 System.out.println(netweorkDifficulty);
+          Block solvedBlock = pickaxe.mine(lastBlock, netweorkDifficulty.intValue());
+
+          localChain.get(localChain.size() - 1).transactionIds.forEach(Network::confirmTxRecord);
+          localChain.get(localChain.size() - 1).transactionIds = null;
+          localChain.get(localChain.size() - 1).randomness = solvedBlock.randomness;
+          localChain.get(localChain.size() - 1).hash = solvedBlock.hash;
+
+          Block block = new Block(localChain.get(localChain.size() - 1).hash);
+          ArrayList&lt;TxRecord> txRecords = Network.getUnconfirmedTxRecords();
+          if (txRecords != null) {
+              txRecords.forEach(block::addTransaction);
+          }
+          block.merkleRoot = CryptoService.getMerkleRoot(block.transactions);
+          //transactions need not stay on block. only merkleRoot
+          block.transactions = null;
+
+          localChain.add(block);
+
+          networkChain = Network.getLatestChainFromFakeNetwork();
+          if (localChain.size() &lt; networkChain.size()) {
+              localChain = networkChain;
+              System.out.println(&quot;My chain is smaller than network chain, switching to that one...\n\n&quot;);
+          } else {
+              Network.sendChainOverFakeNetwork(localChain);
+          }
+      }
+      System.out.println(&quot;MINING IS DONE..... &quot;);
+  </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZJpmwBvjEe2eBpLFwjhdNQ" name="getPickaxe" method="_ZjYVYBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZhcbsBvjEe2eBpLFwjhdNQ" type="_ZJgc0BvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZJqN0BvjEe2eBpLFwjhdNQ" name="toString" method="_ZjYVYhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZJq04BvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Zhdp0BvjEe2eBpLFwjhdNQ" name="compareTo" method="_ZjYVZBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zhdp0RvjEe2eBpLFwjhdNQ" name="m" type="_ZJkuQBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZheQ4BvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZiXBsBvjEe2eBpLFwjhdNQ" name="Miner" method="_ZjXuVhvjEe2eBpLFwjhdNQ">
+            <eAnnotations xmi:id="_ZiXoxRvjEe2eBpLFwjhdNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_ZiYP0BvjEe2eBpLFwjhdNQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZiXowBvjEe2eBpLFwjhdNQ" name="name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZiXowRvjEe2eBpLFwjhdNQ" name="stake">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZiXowhvjEe2eBpLFwjhdNQ" name="processingPower" type="_ZiWaoBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiXowxvjEe2eBpLFwjhdNQ" name="cost" type="_ZiWaoBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiXoxBvjEe2eBpLFwjhdNQ" name="diskSpace" type="_ZiWaoBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiYP0RvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_WwU-8B5UEe2eBpLFwjhdNQ" name="startMining" method="_WwbsoB5UEe2eBpLFwjhdNQ" raisedException="_ZguC8RvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZJ7TkBvjEe2eBpLFwjhdNQ" name="Network">
+          <ownedAttribute xmi:id="_ZitnARvjEe2eBpLFwjhdNQ" name="MIN_TRANSACTION" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZitnAhvjEe2eBpLFwjhdNQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZitnAxvjEe2eBpLFwjhdNQ" name="MIN_DIFFICULTY" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZitnBBvjEe2eBpLFwjhdNQ" value="5"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZitnBRvjEe2eBpLFwjhdNQ" name="difficulty" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZitnBhvjEe2eBpLFwjhdNQ" value="MIN_DIFFICULTY"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVZxvjEe2eBpLFwjhdNQ" name="startNetwork" specification="_ZJ8hsBvjEe2eBpLFwjhdNQ">
+            <language>java</language>
+            <body>try {
+			createDB();
+		} catch (SQLException exception) {
+			System.out.println(&quot;DB Init Error -----&quot;);
+			System.out.println(exception.getMessage());
+		}
+
+		List&lt;Block> chain = new ArrayList&lt;>();
+
+		Block genesisBlock = new Block(null);
+		Wallet wallet = new Wallet();
+		saveKeysToDB(wallet.publicKey, wallet.privateKey);
+		chain.add(genesisBlock);
+
+		if (sendChainOverFakeNetwork(chain)) {
+			System.out.println(&quot;Genesis block has been created.&quot;);
+			System.out.println(&quot;Broadcasting to whoever may listen...&quot;);
+			System.out.println(&quot;LocalChain is live (locally) !\n&quot;);
+			System.out.println(&quot;Chain looks like this: \n&quot;);
+//            printLatestChain();
+			System.out.println(&quot;\n\n&quot;);
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVaBvjEe2eBpLFwjhdNQ" name="sendChainOverFakeNetwork" specification="_ZiZd8BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVaRvjEe2eBpLFwjhdNQ" name="chain" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjYVahvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Gson gson = new Gson();
+		String json = gson.toJson(chain);
+		return saveChainToDB(json);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVaxvjEe2eBpLFwjhdNQ" name="getLastBlockInChain" specification="_ZJ9IwBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVbBvjEe2eBpLFwjhdNQ" type="_ZKoeMBvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>List&lt;Block> chain = getLatestChainFromFakeNetwork();
+
+		return chain.get(chain.size() - 1);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVbRvjEe2eBpLFwjhdNQ" name="getLatestChainFromFakeNetwork" specification="_ZJ-W4BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVbhvjEe2eBpLFwjhdNQ" type="_ZguqARvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>Gson gson = new Gson();
+		String json = getLatestChainFromDB();
+		return gson.fromJson(json, new TypeToken&lt;ArrayList&lt;Block>>() {
+		}.getType());
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVbxvjEe2eBpLFwjhdNQ" name="getTxOutputsFromFakeTxPool" specification="_ZJ_lARvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVcBvjEe2eBpLFwjhdNQ" type="_Zgv4IRvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			ResultSet rs = stmt.executeQuery(&quot;SELECT * FROM transaction_outputs&quot;);
+			HashMap&lt;String, TxOutput> UTXOs = new HashMap&lt;>();
+			while (rs.next()) {
+				UTXOs.put(rs.getString(1), new TxOutput(CryptoService.getPublicKeyFromString(rs.getString(2)),
+						rs.getFloat(3), rs.getString(4)));
+			}
+
+			return UTXOs;
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR in getting TX from POOL&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return new HashMap&lt;>();
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVcRvjEe2eBpLFwjhdNQ" name="getTxOutput" specification="_ZKDPYBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVchvjEe2eBpLFwjhdNQ" name="txId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjYVcxvjEe2eBpLFwjhdNQ" type="_ZK2goBvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			ResultSet rs = stmt.executeQuery(&quot;SELECT * FROM transaction_outputs WHERE id = '&quot; + txId + &quot;'&quot;);
+			if (rs.next()) {
+				return new TxOutput(CryptoService.getPublicKeyFromString(rs.getString(2)), rs.getFloat(3),
+						rs.getString(4));
+			}
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR getting TX&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return null;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVdBvjEe2eBpLFwjhdNQ" name="addTxOutput" specification="_ZhkXgxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVdRvjEe2eBpLFwjhdNQ" name="txOutput" type="_ZK2goBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjYVdhvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			return stmt.execute(&quot;INSERT INTO transaction_outputs(id, publicKeyRecipient, value, parentTxId) VALUES('&quot;
+					+ txOutput.id + &quot;','&quot; + Base64.getEncoder().encodeToString(txOutput.recipient.getEncoded()) + &quot;',&quot;
+					+ txOutput.value + &quot;,'&quot; + txOutput.parentTxId + &quot;')&quot;);
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR in adding TX to DB&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return false;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjYVdxvjEe2eBpLFwjhdNQ" name="removeTxOutput" specification="_ZKD2cBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjYVeBvjEe2eBpLFwjhdNQ" name="txId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjYVeRvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			return stmt.execute(&quot;DELETE FROM transaction_outputs WHERE id = '&quot; + txId + &quot;'&quot;);
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR in removing TX to DB&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return true;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8cBvjEe2eBpLFwjhdNQ" name="addUncofirmedTxRecord" specification="_Zhk-kRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8cRvjEe2eBpLFwjhdNQ" name="txRecord" type="_ZK5j8BvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjY8chvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		Gson gson = new Gson();
+		try (Statement stmt = connection.createStatement()) {
+			return stmt.execute(
+					&quot;INSERT INTO transactions(id, publicKeySender, publicKeyRecipient, value, signature, inputs, confirmed)&quot;
+							+ &quot;VALUES('&quot; + txRecord.txId + &quot;','&quot;
+							+ Base64.getEncoder().encodeToString(txRecord.sender.getEncoded()) + &quot;','&quot;
+							+ Base64.getEncoder().encodeToString(txRecord.recipient.getEncoded()) + &quot;',&quot;
+							+ txRecord.value + &quot;,'&quot; + Base64.getEncoder().encodeToString(txRecord.signature) + &quot;','&quot;
+							+ gson.toJson(txRecord.inputs) + &quot;', 0&quot; + &quot;)&quot;);
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR in add unconfirmed Tx&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return false;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8cxvjEe2eBpLFwjhdNQ" name="confirmTxRecord" specification="_ZKFEkBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8dBvjEe2eBpLFwjhdNQ" name="txId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjY8dRvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			System.out.println(&quot;Confirmed: &quot; + txId);
+			return stmt.execute(&quot;UPDATE transactions SET confirmed = 1 WHERE id = '&quot; + txId + &quot;'&quot;);
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR in confirmTxRecord&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return false;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8dhvjEe2eBpLFwjhdNQ" name="getUnconfirmedTxRecords" specification="_ZKFroBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8dxvjEe2eBpLFwjhdNQ" type="_ZguqARvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		Gson gson = new Gson();
+		try (Statement stmt = connection.createStatement()) {
+			ResultSet rs = stmt.executeQuery(&quot;SELECT * FROM transactions WHERE confirmed = 0 LIMIT 5&quot;);
+			ArrayList&lt;TxRecord> txRecords = new ArrayList&lt;>();
+
+			while (rs.next()) {
+				System.out.println(&quot;Got unconfirmed: &quot; + rs.getString(1));
+				TxRecord txRecord = new TxRecord(rs.getString(1), CryptoService.getPublicKeyFromString(rs.getString(2)),
+						CryptoService.getPublicKeyFromString(rs.getString(3)), rs.getFloat(4),
+						Base64.getDecoder().decode(rs.getString(5)),
+						gson.fromJson(rs.getString(6), new TypeToken&lt;ArrayList&lt;TxInput>>() {
+						}.getType()));
+
+				txRecords.add(txRecord);
+			}
+
+			return txRecords;
+		} catch (SQLException e) {
+			System.out.println(&quot;Error in getUnconfirmedTxRecords&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return null;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8eBvjEe2eBpLFwjhdNQ" name="printLatestChain" specification="_ZKGSsRvjEe2eBpLFwjhdNQ">
+            <language>java</language>
+            <body>getLatestChainFromFakeNetwork().forEach(block -> System.out.println(block.toString()));
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8eRvjEe2eBpLFwjhdNQ" name="adaptDifficulty" specification="_ZKGSshvjEe2eBpLFwjhdNQ">
+            <language>java</language>
+            <body>if (getMinerCount() > 2) {
+			difficulty = MIN_DIFFICULTY + getMinerCount() / 2;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8ehvjEe2eBpLFwjhdNQ" name="getMinerCount" specification="_ZKGSsxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8exvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			ResultSet rs = stmt.executeQuery(&quot;SELECT usersNo from user_count WHERE id = 1&quot;);
+			if (rs.next()) {
+				return rs.getInt(1);
+			}
+
+			return -1;
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR printing user count&quot;);
+			System.out.println(e.getMessage());
+			return -1;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8fBvjEe2eBpLFwjhdNQ" name="raiseMinerCount" specification="_ZKG5wRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8fRvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			stmt.execute(
+					&quot;UPDATE user_count SET usersNo = (SELECT usersNo FROM user_count WHERE id = 1) + 1 WHERE id = 1;&quot;);
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR failed to raise user count&quot;);
+			System.out.println(e.getMessage());
+			return false;
+		}
+
+		return true;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8fhvjEe2eBpLFwjhdNQ" name="saveChainToDB" specification="_ZKG5wxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8fxvjEe2eBpLFwjhdNQ" name="data">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjY8gBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			stmt.execute(&quot;UPDATE network SET data_json='&quot; + data + &quot;' WHERE id = 1&quot;);
+		} catch (SQLException e) {
+			System.out.println(&quot;SAVE ON DB ERROR&quot;);
+			System.out.println(e.getMessage());
+			return false;
+		}
+
+		return true;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8gRvjEe2eBpLFwjhdNQ" name="fku" specification="_ZKG5xhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8ghvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			ResultSet rs = stmt.executeQuery(&quot;SELECT * FROM transactions WHERE confirmed = 1&quot;);
+			if (rs.next()) {
+				return false;
+			}
+
+			return true;
+		} catch (SQLException e) {
+			System.out.println(&quot;Err in noTransactionsRecorded&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return true;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8gxvjEe2eBpLFwjhdNQ" name="noTransactionsRecorded" specification="_ZKIH4BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8hBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			ResultSet rs = stmt.executeQuery(&quot;SELECT * FROM transactions&quot;);
+			if (rs.next()) {
+				return false;
+			}
+
+			return true;
+		} catch (SQLException e) {
+			System.out.println(&quot;Err in noTransactionsRecorded&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return true;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8hRvjEe2eBpLFwjhdNQ" name="getLatestChainFromDB" specification="_ZKIu8BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8hhvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			ResultSet rs = stmt.executeQuery(&quot;SELECT data_json FROM network WHERE id = 1&quot;);
+			if (rs.next()) {
+				return rs.getString(1);
+			}
+
+			return null;
+		} catch (SQLException exception) {
+			System.out.println(&quot;GET FROM DB ERROR&quot;);
+			System.out.println(exception.getMessage());
+			return null;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8hxvjEe2eBpLFwjhdNQ" name="getNetworkPublicKey" specification="_ZKIu8hvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8iBvjEe2eBpLFwjhdNQ" type="_ZgpKcRvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			ResultSet rs = stmt.executeQuery(&quot;SELECT networkPublicKey FROM network_keys WHERE id = 1&quot;);
+			if (rs.next()) {
+				return CryptoService.getPublicKeyFromString(rs.getString(1));
+			}
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR in get public key&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return null;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjY8iRvjEe2eBpLFwjhdNQ" name="getNetworkPrivateKey" specification="_ZKIu8xvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjY8ihvjEe2eBpLFwjhdNQ" type="_ZgojYBvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			ResultSet rs = stmt.executeQuery(&quot;SELECT networkPrivateKey FROM network_keys WHERE id = 1&quot;);
+			if (rs.next()) {
+				return CryptoService.getPrivateKeyFromString(rs.getString(1));
+			}
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR in get private key&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return null;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjZjgBvjEe2eBpLFwjhdNQ" name="saveKeysToDB" specification="_ZiaFBhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjZjgRvjEe2eBpLFwjhdNQ" name="publicKey" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjZjghvjEe2eBpLFwjhdNQ" name="privateKey" type="_ZgojYBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjZjgxvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try (Statement stmt = connection.createStatement()) {
+			return stmt.execute(&quot;INSERT INTO network_keys(id, networkPublicKey, networkPrivateKey) VALUES(&quot; + &quot;1,&quot; + &quot;'&quot;
+					+ CryptoService.getStringFromKey(publicKey) + &quot;',&quot; + &quot;'&quot;
+					+ CryptoService.getStringFromKey(privateKey) + &quot;'&quot; + &quot;)&quot;);
+		} catch (SQLException e) {
+			System.out.println(&quot;ERR in saveKeysToDB&quot;);
+			System.out.println(e.getMessage());
+		}
+
+		return false;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjZjhBvjEe2eBpLFwjhdNQ" name="createDB" specification="_ZKJWABvjEe2eBpLFwjhdNQ">
+            <language>java</language>
+            <body>System.out.println(&quot;CREATING DBSSS&quot;);
+		Connection connection = getConnection();
+		Statement stmt = connection.createStatement();
+		System.out.println(&quot;CREATING NETWORK........ &quot;);
+		stmt.execute(&quot;CREATE TABLE network (&quot; + &quot;id integer PRIMARY KEY, &quot; + &quot;data_json text NOT NULL &quot; + &quot;);&quot;);
+		System.out.println(&quot;CREATING user_count........ &quot;);
+		stmt.execute(&quot;CREATE TABLE user_count (id integer PRIMARY KEY, usersNo integer NOT NULL);&quot;);
+		System.out.println(&quot;CREATING transaction_outputs........ &quot;);
+		stmt.execute(&quot;CREATE TABLE transaction_outputs (&quot; + &quot;id text PRIMARY KEY,&quot; + &quot;publicKeyRecipient text NOT NULL,&quot;
+				+ &quot;value real NOT NULL,&quot; + &quot;parentTxId text NOT NULL&quot; + &quot;);&quot;);
+		System.out.println(&quot;CREATING transactions........ &quot;);
+		stmt.execute(&quot;CREATE TABLE transactions(&quot; + &quot;id text PRIMARY KEY,&quot; + &quot;publicKeySender text NOT NULL,&quot;
+				+ &quot;publicKeyRecipient text NOT NULL,&quot; + &quot;value real NOT NULL,&quot; + &quot;signature text NOT NULL,&quot;
+				+ &quot;inputs text NOT NULL,&quot; + &quot;confirmed integer NOT NULL&quot; + &quot;);&quot;);
+		System.out.println(&quot;CREATING network_keys........ &quot;);
+		stmt.execute(&quot;CREATE TABLE network_keys(&quot; + &quot;id integer PRIMARY KEY,&quot; + &quot;networkPublicKey text NOT NULL,&quot;
+				+ &quot;networkPrivateKey text NOT NULL&quot; + &quot;)&quot;);
+		System.out.println(&quot;CREATING miners........ &quot;);
+		stmt.execute(&quot;CREATE TABLE miners(&quot; + &quot;id integer PRIMARY KEY,&quot; + &quot;name varchar(30) NOT NULL,&quot;
+				+ &quot;stake numeric(10,2) NOT NULL,&quot; + &quot;processPower numeric(10,2) NOT NULL,&quot;
+				+ &quot;cost numeric(10,2) NOT NULL,&quot; + &quot;diskSpace numeric(10,2) NOT NULL&quot; + &quot;)&quot;);
+		System.out.println(&quot;INSERTING user_count........ &quot;);
+		stmt.execute(&quot;INSERT INTO user_count(id, usersNo) VALUES (1, 0)&quot;);
+		stmt.execute(&quot;INSERT INTO network(id, data_json) VALUES (1, 'no data')&quot;);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaKkBvjEe2eBpLFwjhdNQ" name="addMinerToDb" specification="_ZhlloBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaKkRvjEe2eBpLFwjhdNQ" name="miner" type="_ZJkuQBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjaKkhvjEe2eBpLFwjhdNQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaKkxvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		try {
+			Statement stmt = connection.createStatement();
+			return stmt.execute(&quot;INSERT INTO miners(id, name, stake, &quot; + &quot;processPower, cost, diskSpace) VALUES(&quot; + id
+					+ &quot;, '&quot; + miner.getName() + &quot;', &quot; + miner.getStake() + &quot;, &quot; + miner.getProcessingPower() + &quot;, &quot;
+					+ miner.getCost() + &quot;, &quot; + miner.getDiskSpace() + &quot;)&quot;);
+		} catch (SQLException e) {
+			System.out.println(&quot;SQL ERRORR FOR ADDING MINER &quot; + e);
+			e.printStackTrace();
+		}
+
+		return false;
+
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaKlBvjEe2eBpLFwjhdNQ" name="getMiners" specification="_ZKJWARvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaKlRvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjaKlhvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		Statement stmt = connection.createStatement();
+		ResultSet rs = stmt.executeQuery(&quot;SELECT * from miners&quot;);
+//    	System.out.println(rs);
+		List&lt;Miner> ans = new ArrayList&lt;Miner>();
+		while (rs.next()) {
+			String name = rs.getString(&quot;name&quot;);
+			Integer stake = rs.getInt(&quot;stake&quot;);
+			Double processPower = rs.getDouble(&quot;processPower&quot;);
+			Double cost = rs.getDouble(&quot;cost&quot;);
+			Double diskSpace = rs.getDouble(&quot;diskSpace&quot;);
+//            System.out.println(name + &quot;, &quot; + stake + &quot;, &quot; + processPower +
+//                    &quot;, &quot; + cost + &quot;, &quot; + diskSpace);
+			ans.add(new Miner(name, stake, processPower, cost, diskSpace));
+		}
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaKlxvjEe2eBpLFwjhdNQ" name="getMinersBasedOnPriority" specification="_ZKMZUBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaKmBvjEe2eBpLFwjhdNQ" name="finalQuery">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaKmRvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjaKmhvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		Statement stmt = connection.createStatement();
+		ResultSet rs = stmt.executeQuery(&quot;SELECT * from miners ORDER BY &quot; + finalQuery );
+		List&lt;Miner> ans = new ArrayList&lt;Miner>();
+		while (rs.next()) {
+			String name = rs.getString(&quot;name&quot;);
+			Integer stake = rs.getInt(&quot;stake&quot;);
+			Double processPower = rs.getDouble(&quot;processPower&quot;);
+			Double cost = rs.getDouble(&quot;cost&quot;);
+			Double diskSpace = rs.getDouble(&quot;diskSpace&quot;);
+			ans.add(new Miner(name, stake, processPower, cost, diskSpace));
+			
+		}
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaKmxvjEe2eBpLFwjhdNQ" name="getMinerBasedOnScore" specification="_ZKRR0BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaKnBvjEe2eBpLFwjhdNQ" name="finalQuery">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaKnRvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaKnhvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjaKnxvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		Statement stmt = connection.createStatement();
+		ResultSet rs = stmt.executeQuery(&quot;SELECT *,&quot;+ finalQuery +&quot; AS result from miners ORDER BY result DESC LIMIT &quot; +  Integer.toString(cutOff));
+		List&lt;Miner> ans = new ArrayList&lt;Miner>();
+		while (rs.next()) {
+			String name = rs.getString(&quot;name&quot;);
+			Integer stake = rs.getInt(&quot;stake&quot;);
+			Double processPower = rs.getDouble(&quot;processPower&quot;);
+			Double cost = rs.getDouble(&quot;cost&quot;);
+			Double diskSpace = rs.getDouble(&quot;diskSpace&quot;);
+			ans.add(new Miner(name, stake, processPower, cost, diskSpace));
+		}
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaKoBvjEe2eBpLFwjhdNQ" name="getMinerRandom" specification="_ZKTuEBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaKoRvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaKohvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjaKoxvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Connection connection = getConnection();
+		Statement stmt = connection.createStatement();
+		ResultSet rs = stmt.executeQuery(&quot;SELECT * from miners ORDER BY RANDOM() LIMIT &quot; +  Integer.toString(cutOff));
+		List&lt;Miner> ans = new ArrayList&lt;Miner>();
+		while (rs.next()) {
+			String name = rs.getString(&quot;name&quot;);
+			Integer stake = rs.getInt(&quot;stake&quot;);
+			Double processPower = rs.getDouble(&quot;processPower&quot;);
+			Double cost = rs.getDouble(&quot;cost&quot;);
+			Double diskSpace = rs.getDouble(&quot;diskSpace&quot;);
+			ans.add(new Miner(name, stake, processPower, cost, diskSpace));
+//			System.out.println(name);
+		}
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaKpBvjEe2eBpLFwjhdNQ" name="getConnection" specification="_ZKUVIRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaKpRvjEe2eBpLFwjhdNQ" type="_ZiasERvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>String dbFilename = System.getProperty(&quot;user.dir&quot;) + &quot;/localchain.db&quot;;
+
+		try {
+			return DriverManager.getConnection(&quot;jdbc:sqlite:&quot; + dbFilename);
+		} catch (SQLException e) {
+			System.out.println(&quot;Could not connect to DB in NetworkService. Exiting...&quot;);
+			System.out.println(e.getMessage());
+			System.exit(-1);
+		}
+
+		return null;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZJ8hsBvjEe2eBpLFwjhdNQ" name="startNetwork" method="_ZjYVZxvjEe2eBpLFwjhdNQ"/>
+          <ownedOperation xmi:id="_ZJ9IwBvjEe2eBpLFwjhdNQ" name="getLastBlockInChain" isStatic="true" method="_ZjYVaxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZhkXgRvjEe2eBpLFwjhdNQ" type="_ZKoeMBvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZJ-W4BvjEe2eBpLFwjhdNQ" name="getLatestChainFromFakeNetwork" isStatic="true" method="_ZjYVbRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiaFARvjEe2eBpLFwjhdNQ" type="_ZguqARvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZJ_lARvjEe2eBpLFwjhdNQ" name="getTxOutputsFromFakeTxPool" isStatic="true" method="_ZjYVbxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiaFAhvjEe2eBpLFwjhdNQ" type="_Zgv4IRvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKDPYBvjEe2eBpLFwjhdNQ" name="getTxOutput" isStatic="true" method="_ZjYVcRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKDPYRvjEe2eBpLFwjhdNQ" name="txId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZhkXghvjEe2eBpLFwjhdNQ" type="_ZK2goBvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKD2cBvjEe2eBpLFwjhdNQ" name="removeTxOutput" isStatic="true" method="_ZjYVdxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKEdgBvjEe2eBpLFwjhdNQ" name="txId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKEdgRvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKFEkBvjEe2eBpLFwjhdNQ" name="confirmTxRecord" isStatic="true" method="_ZjY8cxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKFEkRvjEe2eBpLFwjhdNQ" name="txId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKFEkhvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKFroBvjEe2eBpLFwjhdNQ" name="getUnconfirmedTxRecords" isStatic="true" method="_ZjY8dhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiaFAxvjEe2eBpLFwjhdNQ" type="_ZguqARvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKGSsRvjEe2eBpLFwjhdNQ" name="printLatestChain" isStatic="true" method="_ZjY8eBvjEe2eBpLFwjhdNQ"/>
+          <ownedOperation xmi:id="_ZKGSshvjEe2eBpLFwjhdNQ" name="adaptDifficulty" isStatic="true" method="_ZjY8eRvjEe2eBpLFwjhdNQ"/>
+          <ownedOperation xmi:id="_ZKGSsxvjEe2eBpLFwjhdNQ" name="getMinerCount" isStatic="true" method="_ZjY8ehvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKG5wBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKG5wRvjEe2eBpLFwjhdNQ" name="raiseMinerCount" isStatic="true" method="_ZjY8fBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKG5whvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKG5wxvjEe2eBpLFwjhdNQ" name="saveChainToDB" visibility="private" isStatic="true" method="_ZjY8fhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKG5xBvjEe2eBpLFwjhdNQ" name="data">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKG5xRvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKG5xhvjEe2eBpLFwjhdNQ" name="fku" isStatic="true" method="_ZjY8gRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKHg0BvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKIH4BvjEe2eBpLFwjhdNQ" name="noTransactionsRecorded" isStatic="true" method="_ZjY8gxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKIH4RvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKIu8BvjEe2eBpLFwjhdNQ" name="getLatestChainFromDB" visibility="private" isStatic="true" method="_ZjY8hRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKIu8RvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKIu8hvjEe2eBpLFwjhdNQ" name="getNetworkPublicKey" isStatic="true" method="_ZjY8hxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiaFBBvjEe2eBpLFwjhdNQ" type="_ZgpKcRvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKIu8xvjEe2eBpLFwjhdNQ" name="getNetworkPrivateKey" isStatic="true" method="_ZjY8iRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiaFBRvjEe2eBpLFwjhdNQ" type="_ZgojYBvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKJWABvjEe2eBpLFwjhdNQ" name="createDB" visibility="private" isStatic="true" method="_ZjZjhBvjEe2eBpLFwjhdNQ" raisedException="_ZguC8RvjEe2eBpLFwjhdNQ"/>
+          <ownedOperation xmi:id="_ZKJWARvjEe2eBpLFwjhdNQ" name="getMiners" isStatic="true" method="_ZjaKlBvjEe2eBpLFwjhdNQ" raisedException="_ZguC8RvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKJWAhvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKJWAxvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKMZUBvjEe2eBpLFwjhdNQ" name="getMinersBasedOnPriority" isStatic="true" method="_ZjaKlxvjEe2eBpLFwjhdNQ" raisedException="_ZguC8RvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKMZURvjEe2eBpLFwjhdNQ" name="finalQuery">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKOOgBvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKOOgRvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKRR0BvjEe2eBpLFwjhdNQ" name="getMinerBasedOnScore" isStatic="true" method="_ZjaKmxvjEe2eBpLFwjhdNQ" raisedException="_ZguC8RvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKR44BvjEe2eBpLFwjhdNQ" name="finalQuery">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKSf8BvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKTHABvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKTHARvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKTuEBvjEe2eBpLFwjhdNQ" name="getMinerRandom" isStatic="true" method="_ZjaKoBvjEe2eBpLFwjhdNQ" raisedException="_ZguC8RvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKTuERvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKTuEhvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKUVIBvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKUVIRvjEe2eBpLFwjhdNQ" name="getConnection" visibility="private" isStatic="true" method="_ZjaKpBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZibTIRvjEe2eBpLFwjhdNQ" type="_ZiasERvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZhkXgxvjEe2eBpLFwjhdNQ" name="addTxOutput" isStatic="true" method="_ZjYVdBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZhkXhBvjEe2eBpLFwjhdNQ" name="txOutput" type="_ZK2goBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zhk-kBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Zhk-kRvjEe2eBpLFwjhdNQ" name="addUncofirmedTxRecord" isStatic="true" method="_ZjY8cBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zhk-khvjEe2eBpLFwjhdNQ" name="txRecord" type="_ZK5j8BvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zhk-kxvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZhlloBvjEe2eBpLFwjhdNQ" name="addMinerToDb" isStatic="true" method="_ZjaKkBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZhlloRvjEe2eBpLFwjhdNQ" name="miner" type="_ZJkuQBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZhllohvjEe2eBpLFwjhdNQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZhlloxvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZiZd8BvjEe2eBpLFwjhdNQ" name="sendChainOverFakeNetwork" isStatic="true" method="_ZjYVaBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiZd8RvjEe2eBpLFwjhdNQ" name="chain" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiZd8hvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZiaFBhvjEe2eBpLFwjhdNQ" name="saveKeysToDB" visibility="private" isStatic="true" method="_ZjZjgBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZiaFBxvjEe2eBpLFwjhdNQ" name="publicKey" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiaFCBvjEe2eBpLFwjhdNQ" name="privateKey" type="_ZgojYBvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiasEBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZKabwBvjEe2eBpLFwjhdNQ" name="PreferenceModels">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaxoBvjEe2eBpLFwjhdNQ" name="numericalPreference" specification="_Zib6MBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaxoRvjEe2eBpLFwjhdNQ" name="priorityMap" type="_Zgv4IRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjaxohvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaxoxvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <name xsi:nil="true"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjaxpBvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>String finalQuery = &quot;&quot;;
+		boolean containsPrev = false;
+
+		if (priorityMap.containsKey(Constants.STAKE)) {
+			finalQuery += &quot;(stake*&quot; + Integer.toString(priorityMap.get(Constants.STAKE)) + &quot;)&quot;;
+			containsPrev = true;
+		}
+		if (priorityMap.containsKey(Constants.PROCESSINGPOWER)) {
+			finalQuery += (containsPrev? &quot; + &quot;:&quot;&quot;) + &quot;(processPower*&quot; + Integer.toString(priorityMap.get(Constants.PROCESSINGPOWER)) + &quot;)&quot;;
+			containsPrev = true;
+		}
+		if (priorityMap.containsKey(Constants.COST)) {
+			finalQuery += (containsPrev? &quot; + &quot;:&quot;&quot;) +&quot;(cost*&quot; + Integer.toString(priorityMap.get(Constants.COST)) + &quot;)&quot;;
+			containsPrev = true;
+		}
+		if (priorityMap.containsKey(Constants.DISKSPACE)) {
+			finalQuery +=  (containsPrev? &quot; + &quot;:&quot;&quot;) +&quot;(diskSpace*&quot; + Integer.toString(priorityMap.get(Constants.DISKSPACE)) + &quot;)&quot;;
+		}
+		try {
+			return Network.getMinerBasedOnScore(finalQuery, cutOff);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaxpRvjEe2eBpLFwjhdNQ" name="generateNumericPreference" specification="_ZKcQ8BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaxphvjEe2eBpLFwjhdNQ" type="_Zgv4IRvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>int numOfPreferences = generateRandomNum(1, 3);
+
+		Map&lt;String, Integer> priority = new HashMap&lt;String, Integer>();
+
+		for (int i = 0; i &lt; numOfPreferences; i++) {
+			int value = generateRandomNum(1, 4);
+
+			priority.put(getPreferenceName(value), generateRandomNum(0, 100));
+		}
+
+		return priority;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaxpxvjEe2eBpLFwjhdNQ" name="generatePriorityAndBalancePreference" specification="_ZKjlsBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaxqBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjaxqRvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>List&lt;String> pref = new ArrayList&lt;>();
+
+		int numOfPreferences = generateRandomNum(1, 3);
+		for (int i = 0; i &lt; numOfPreferences; i++) {
+			int value = generateRandomNum(1, 4);
+
+			pref.add(getPreferenceName(value));
+		}
+		return pref;
+
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaxqhvjEe2eBpLFwjhdNQ" name="generateRandomNum" specification="_ZKmB8BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaxqxvjEe2eBpLFwjhdNQ" name="min">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaxrBvjEe2eBpLFwjhdNQ" name="max">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaxrRvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>int range = max - min + 1;
+		return (int) (Math.random() * range) + min;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaxrhvjEe2eBpLFwjhdNQ" name="getPreferenceName" specification="_ZKmpABvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaxrxvjEe2eBpLFwjhdNQ" name="num">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaxsBvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if (num == 1) {
+			return Constants.PROCESSINGPOWER;
+		} else if (num == 2) {
+			return Constants.STAKE;
+		} else if (num == 3) {
+			return Constants.COST;
+		} else {
+			return Constants.DISKSPACE;
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaxsRvjEe2eBpLFwjhdNQ" name="prioritizedPreference" specification="_ZieWcRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaxshvjEe2eBpLFwjhdNQ" name="preference" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjaxsxvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaxtBvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <name xsi:nil="true"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjaxtRvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>try {
+			String finalQuery = &quot;&quot;;
+
+			for (int i = 0; i &lt; preference.size(); i++) {
+				String string = preference.get(i);
+
+				if (string.equals(Constants.STAKE)) {
+					finalQuery += &quot;stake DESC&quot;;
+				} else if (string.equals(Constants.PROCESSINGPOWER)) {
+					finalQuery += &quot;processPower DESC&quot;;
+				} else if (string.equals(Constants.COST)) {
+					finalQuery += &quot;cost DESC&quot;;
+
+				} else if (string.equals(Constants.DISKSPACE)) {
+					finalQuery += &quot;diskSpace DESC&quot;;
+				}
+
+				if (i &lt; preference.size() - 1) {
+					finalQuery += &quot;, &quot;;
+				} else {
+					finalQuery += &quot; LIMIT &quot; + Integer.toString(cutOff);
+				}
+			}
+
+			return Network.getMinersBasedOnPriority(finalQuery);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaxthvjEe2eBpLFwjhdNQ" name="balancedPreference" specification="_Zie9gRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaxtxvjEe2eBpLFwjhdNQ" name="preference" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjaxuBvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaxuRvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <name xsi:nil="true"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZjaxuhvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>String finalQuery = &quot;&quot;;
+		boolean containsPrev = false;
+
+		if (preference.contains(Constants.STAKE)) {
+			finalQuery += &quot;stake&quot;;
+			containsPrev = true;
+		}
+		if (preference.contains(Constants.PROCESSINGPOWER)) {
+			finalQuery += (containsPrev? &quot; + &quot;:&quot;&quot;) + &quot;processPower&quot;;
+			containsPrev = true;
+		}
+		if (preference.contains(Constants.COST)) {
+			finalQuery += (containsPrev? &quot; + &quot;:&quot;&quot;) +&quot;cost&quot;;
+			containsPrev = true;
+		}
+		if (preference.contains(Constants.DISKSPACE)) {
+			finalQuery +=  (containsPrev? &quot; + &quot;:&quot;&quot;) +&quot;diskSpace&quot;;
+		}
+		try {
+			return Network.getMinerBasedOnScore(finalQuery, cutOff);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZKcQ8BvjEe2eBpLFwjhdNQ" name="generateNumericPreference" isStatic="true" method="_ZjaxpRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZieWcBvjEe2eBpLFwjhdNQ" type="_Zgv4IRvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKjlsBvjEe2eBpLFwjhdNQ" name="generatePriorityAndBalancePreference" isStatic="true" method="_ZjaxpxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKkMwBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKkMwRvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKmB8BvjEe2eBpLFwjhdNQ" name="generateRandomNum" isStatic="true" method="_ZjaxqhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKmB8RvjEe2eBpLFwjhdNQ" name="min">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKmB8hvjEe2eBpLFwjhdNQ" name="max">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKmB8xvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKmpABvjEe2eBpLFwjhdNQ" name="getPreferenceName" isStatic="true" method="_ZjaxrhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKmpARvjEe2eBpLFwjhdNQ" name="num">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKmpAhvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Zib6MBvjEe2eBpLFwjhdNQ" name="numericalPreference" isStatic="true" method="_ZjaxoBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZichQBvjEe2eBpLFwjhdNQ" name="priorityMap" type="_Zgv4IRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZidIUBvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZidIURvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZidIUhvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZieWcRvjEe2eBpLFwjhdNQ" name="prioritizedPreference" isStatic="true" method="_ZjaxsRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZieWchvjEe2eBpLFwjhdNQ" name="preference" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZieWcxvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZieWdBvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZieWdRvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Zie9gRvjEe2eBpLFwjhdNQ" name="balancedPreference" isStatic="true" method="_ZjaxthvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zie9ghvjEe2eBpLFwjhdNQ" name="preference" type="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zie9gxvjEe2eBpLFwjhdNQ" name="cutOff">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Zie9hBvjEe2eBpLFwjhdNQ" type="_ZJkuQBvjEe2eBpLFwjhdNQ" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zie9hRvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZKoeMBvjEe2eBpLFwjhdNQ" name="Block">
+          <ownedAttribute xmi:id="_ZiuOERvjEe2eBpLFwjhdNQ" name="hash">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZiuOExvjEe2eBpLFwjhdNQ" name="previousBlockHash">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Ziu1JBvjEe2eBpLFwjhdNQ" name="transactions" type="_ZguqARvjEe2eBpLFwjhdNQ" association="_Zjr3YRvjEe2eBpLFwjhdNQ">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZivcMRvjEe2eBpLFwjhdNQ" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZivcMxvjEe2eBpLFwjhdNQ" name="transactionIds" type="_ZguqARvjEe2eBpLFwjhdNQ" association="_Zjr3ZBvjEe2eBpLFwjhdNQ">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZivcNRvjEe2eBpLFwjhdNQ" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZiwqUBvjEe2eBpLFwjhdNQ" name="randomness">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZiwqUhvjEe2eBpLFwjhdNQ" name="hashNext">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZixRYRvjEe2eBpLFwjhdNQ" name="timestamp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_y2QzEB5NEe2eBpLFwjhdNQ" name="merkleRoot">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_y2TPUB5NEe2eBpLFwjhdNQ" value="&quot;emptyString&quot;"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjaxuxvjEe2eBpLFwjhdNQ" name="Block" specification="_ZKq6cBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjaxvBvjEe2eBpLFwjhdNQ" name="previousBlockHash">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjaxvRvjEe2eBpLFwjhdNQ" type="_ZKoeMBvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.hash = null;
+     this.previousBlockHash = previousBlockHash;
+     this.timestamp = new Date().getTime();
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjbYsBvjEe2eBpLFwjhdNQ" name="isMined" specification="_ZKsIkBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjbYsRvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return hash != null;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjbYtRvjEe2eBpLFwjhdNQ" name="toString" specification="_ZKsIkhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjbYthvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return &quot;Block [hash=&quot; + hash + &quot;, previousBlockHash=&quot; + previousBlockHash + &quot;, merkleRoot=&quot; + merkleRoot
+				+ &quot;, transactions=&quot; + transactions + &quot;, transactionIds=&quot; + transactionIds + &quot;, randomness=&quot; + randomness
+				+ &quot;, hashNext=&quot; + hashNext + &quot;, timestamp=&quot; + timestamp + &quot;]&quot;;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_gOOewB4-Ee2eBpLFwjhdNQ" name="addTransaction" specification="_gOEGsB4-Ee2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_gOOewR4-Ee2eBpLFwjhdNQ" name="transaction" type="_ZK5j8BvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_gOOewh4-Ee2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if(transaction == null) return false;
+      if((!transaction.processTx())) {
+          System.out.println(&quot;Transaction failed to process. Discarded.&quot;);
+          return false;
+      }
+
+      transactions.add(transaction);
+      transactionIds.add(transaction.txId);
+      System.out.println(&quot;Transaction Successfully added to Block&quot;);
+      return true;
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZKq6cBvjEe2eBpLFwjhdNQ" name="Block" method="_ZjaxuxvjEe2eBpLFwjhdNQ">
+            <eAnnotations xmi:id="_ZKrhgBvjEe2eBpLFwjhdNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_ZKrhgRvjEe2eBpLFwjhdNQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZKq6cRvjEe2eBpLFwjhdNQ" name="previousBlockHash">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZKrhghvjEe2eBpLFwjhdNQ" type="_ZKoeMBvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKsIkBvjEe2eBpLFwjhdNQ" name="isMined" method="_ZjbYsBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKsIkRvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZKsIkhvjEe2eBpLFwjhdNQ" name="toString" method="_ZjbYtRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZKsIkxvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_gOEGsB4-Ee2eBpLFwjhdNQ" name="addTransaction" method="_gOOewB4-Ee2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_gOF74B4-Ee2eBpLFwjhdNQ" name="transaction" type="_ZK5j8BvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_gOLbcB4-Ee2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZK2goBvjEe2eBpLFwjhdNQ" name="TxOutput">
+          <ownedAttribute xmi:id="_Zix4cRvjEe2eBpLFwjhdNQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZiyfgRvjEe2eBpLFwjhdNQ" name="recipient" type="_ZgpKcRvjEe2eBpLFwjhdNQ" association="_ZjsecRvjEe2eBpLFwjhdNQ"/>
+          <ownedAttribute xmi:id="_ZiyfgxvjEe2eBpLFwjhdNQ" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZiyfhRvjEe2eBpLFwjhdNQ" name="parentTxId">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjbYtxvjEe2eBpLFwjhdNQ" name="TxOutput" specification="_ZigLpBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjbYuBvjEe2eBpLFwjhdNQ" name="recipient" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjbYuRvjEe2eBpLFwjhdNQ" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjbYuhvjEe2eBpLFwjhdNQ" name="parentTxId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjbYuxvjEe2eBpLFwjhdNQ" type="_ZK2goBvjEe2eBpLFwjhdNQ" direction="return"/>
+            <language>java</language>
+            <body>this.recipient = recipient;
+     this.value = value;
+     this.parentTxId = parentTxId;
+     this.id = CryptoService.applySha256(CryptoService.getStringFromKey(recipient) + value + parentTxId);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjbYvBvjEe2eBpLFwjhdNQ" name="isMine" specification="_ZihZwhvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjbYvRvjEe2eBpLFwjhdNQ" name="publicKey" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjbYvhvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return (publicKey.equals(recipient));
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZigLpBvjEe2eBpLFwjhdNQ" name="TxOutput" method="_ZjbYtxvjEe2eBpLFwjhdNQ">
+            <eAnnotations xmi:id="_ZigysxvjEe2eBpLFwjhdNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_ZihZwBvjEe2eBpLFwjhdNQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZigysBvjEe2eBpLFwjhdNQ" name="recipient" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZigysRvjEe2eBpLFwjhdNQ" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZigyshvjEe2eBpLFwjhdNQ" name="parentTxId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZihZwRvjEe2eBpLFwjhdNQ" type="_ZK2goBvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZihZwhvjEe2eBpLFwjhdNQ" name="isMine" method="_ZjbYvBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZihZwxvjEe2eBpLFwjhdNQ" name="publicKey" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZihZxBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZK5j8BvjEe2eBpLFwjhdNQ" name="TxRecord">
+          <ownedAttribute xmi:id="_ZiztoBvjEe2eBpLFwjhdNQ" name="txId">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ZiztohvjEe2eBpLFwjhdNQ" name="sender" type="_ZgpKcRvjEe2eBpLFwjhdNQ" association="_ZjsedBvjEe2eBpLFwjhdNQ"/>
+          <ownedAttribute xmi:id="_Zi0UsBvjEe2eBpLFwjhdNQ" name="recipient" type="_ZgpKcRvjEe2eBpLFwjhdNQ" association="_ZjsedxvjEe2eBpLFwjhdNQ"/>
+          <ownedAttribute xmi:id="_Zi0UshvjEe2eBpLFwjhdNQ" name="value">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Zi07wRvjEe2eBpLFwjhdNQ" name="signature">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zi07whvjEe2eBpLFwjhdNQ" value="*"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Zi2J4xvjEe2eBpLFwjhdNQ" name="outputs" type="_ZguqARvjEe2eBpLFwjhdNQ" association="_ZjtskRvjEe2eBpLFwjhdNQ">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Zi2w8RvjEe2eBpLFwjhdNQ" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_TUbTEB5EEe2eBpLFwjhdNQ" name="inputs" type="_ZguqARvjEe2eBpLFwjhdNQ" association="_TUuOAB5EEe2eBpLFwjhdNQ">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_TUjO4B5EEe2eBpLFwjhdNQ" value="new ArrayList&lt;>()"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZjbYvxvjEe2eBpLFwjhdNQ" name="TxRecord" specification="_ZiiA0BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZjbYwBvjEe2eBpLFwjhdNQ" name="from" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjbYwRvjEe2eBpLFwjhdNQ" name="to" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjbYwhvjEe2eBpLFwjhdNQ" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZjbYwxvjEe2eBpLFwjhdNQ" name="inputs" type="_ZguqARvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZjbYxBvjEe2eBpLFwjhdNQ" type="_ZK5j8BvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.sender = from;
+     this.recipient = to;
+     this.value = value;
+//        this.inputs = inputs;
+
+     this.txId = calculateHash();
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Zjb_wBvjEe2eBpLFwjhdNQ" name="TxRecord" specification="_ZijO8BvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zjb_wRvjEe2eBpLFwjhdNQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Zjb_whvjEe2eBpLFwjhdNQ" name="from" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zjb_wxvjEe2eBpLFwjhdNQ" name="to" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zjb_xBvjEe2eBpLFwjhdNQ" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Zjb_xRvjEe2eBpLFwjhdNQ" name="signature">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zjb_xhvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_Zjb_xxvjEe2eBpLFwjhdNQ" name="inputs" type="_ZguqARvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Zjb_yBvjEe2eBpLFwjhdNQ" type="_ZK5j8BvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.txId = id;
+     this.sender = from;
+     this.recipient = to;
+     this.value = value;
+     this.signature = signature;
+//        this.inputs = inputs;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Zjb_yRvjEe2eBpLFwjhdNQ" name="processTx" specification="_ZK9OUBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zjb_yhvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>PublicKey networkKey = Network.getNetworkPublicKey();
+
+     if (networkKey != null &amp;&amp; networkKey.equals(this.sender)) {
+         outputs.add(new TxOutput( this.recipient, value, txId));
+
+         for(TxOutput o : outputs) {
+             Network.addTxOutput(o);
+         }
+
+         return true;
+     }
+
+     if(!verifySignature()) {
+         System.out.println(&quot;Transaction Signature failed to verify&quot;);
+         return false;
+     }
+
+     //Generate transaction outputs:
+     float leftOver = getInputsValue() - value; //get value of inputs then the left over change:
+     outputs.add(new TxOutput( this.recipient, value, txId)); //send value to recipient
+     outputs.add(new TxOutput( this.sender, leftOver, txId)); //send the left over 'change' back to sender
+
+     //Add outputs to Unspent list
+     for(TxOutput o : outputs) {
+         Network.addTxOutput(o);
+     }
+
+     //Remove transaction inputs from UTXO lists as spent:
+     for(TxInput i : inputs) {
+         if(i.UTXO == null) continue; //if Transaction can't be found skip it
+         if (!Network.removeTxOutput(i.UTXO.id)) {
+//                System.out.println(&quot;OH NO! It didn't delete the spent input with id: &quot; + i.UTXO.id);
+         }
+     }
+
+     return true;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Zjb_yxvjEe2eBpLFwjhdNQ" name="getInputsValue" specification="_ZK-ccBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zjb_zBvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>float total = 0;
+     for(TxInput i : inputs) {
+         if(i.UTXO == null) continue; //if Transaction can't be found skip it, This behavior may not be optimal.
+         total += i.UTXO.value;
+     }
+     return total;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Zjb_zRvjEe2eBpLFwjhdNQ" name="generateSignature" specification="_Zij2ARvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zjb_zhvjEe2eBpLFwjhdNQ" name="privateKey" type="_ZgojYBvjEe2eBpLFwjhdNQ"/>
+            <language>java</language>
+            <body>String data = CryptoService.getStringFromKey(sender) + CryptoService.getStringFromKey(recipient) + value;
+     signature = CryptoService.applyECDSASig(privateKey, data);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Zjb_zxvjEe2eBpLFwjhdNQ" name="verifySignature" specification="_ZK_DgBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zjb_0BvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>String data = CryptoService.getStringFromKey(sender) + CryptoService.getStringFromKey(recipient) + value;
+     return CryptoService.verifyECDSASig(sender, data, signature);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Zjb_0RvjEe2eBpLFwjhdNQ" name="calculateHash" specification="_ZK_qkBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zjb_0hvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return CryptoService.applySha256(
+             CryptoService.getStringFromKey(sender) +
+                     CryptoService.getStringFromKey(recipient) +
+                     value +
+                     new Date().getTime()
+     );
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZK9OUBvjEe2eBpLFwjhdNQ" name="processTx" method="_Zjb_yRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZK91YBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZK-ccBvjEe2eBpLFwjhdNQ" name="getInputsValue" method="_Zjb_yxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZK-ccRvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZK_DgBvjEe2eBpLFwjhdNQ" name="verifySignature" method="_Zjb_zxvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZK_DgRvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZK_qkBvjEe2eBpLFwjhdNQ" name="calculateHash" visibility="private" method="_Zjb_0RvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_ZLA4sBvjEe2eBpLFwjhdNQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZiiA0BvjEe2eBpLFwjhdNQ" name="TxRecord" method="_ZjbYvxvjEe2eBpLFwjhdNQ">
+            <eAnnotations xmi:id="_ZiiA1RvjEe2eBpLFwjhdNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_Ziin4BvjEe2eBpLFwjhdNQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZiiA0RvjEe2eBpLFwjhdNQ" name="from" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiiA0hvjEe2eBpLFwjhdNQ" name="to" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZiiA0xvjEe2eBpLFwjhdNQ" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZiiA1BvjEe2eBpLFwjhdNQ" name="inputs" type="_ZguqARvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_Ziin4RvjEe2eBpLFwjhdNQ" type="_ZK5j8BvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZijO8BvjEe2eBpLFwjhdNQ" name="TxRecord" method="_Zjb_wBvjEe2eBpLFwjhdNQ">
+            <eAnnotations xmi:id="_ZijO9xvjEe2eBpLFwjhdNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_ZijO-BvjEe2eBpLFwjhdNQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZijO8RvjEe2eBpLFwjhdNQ" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZijO8hvjEe2eBpLFwjhdNQ" name="from" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZijO8xvjEe2eBpLFwjhdNQ" name="to" type="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZijO9BvjEe2eBpLFwjhdNQ" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZijO9RvjEe2eBpLFwjhdNQ" name="signature">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZijO-hvjEe2eBpLFwjhdNQ" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_ZijO9hvjEe2eBpLFwjhdNQ" name="inputs" type="_ZguqARvjEe2eBpLFwjhdNQ"/>
+            <ownedParameter xmi:id="_ZijO-RvjEe2eBpLFwjhdNQ" type="_ZK5j8BvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Zij2ARvjEe2eBpLFwjhdNQ" name="generateSignature" method="_Zjb_zRvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zij2AhvjEe2eBpLFwjhdNQ" name="privateKey" type="_ZgojYBvjEe2eBpLFwjhdNQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZLD8ABvjEe2eBpLFwjhdNQ" name="Wallet">
+          <ownedAttribute xmi:id="_Zi2w8xvjEe2eBpLFwjhdNQ" name="publicKey" type="_ZgpKcRvjEe2eBpLFwjhdNQ" association="_ZjtslBvjEe2eBpLFwjhdNQ"/>
+          <ownedAttribute xmi:id="_Zi3YARvjEe2eBpLFwjhdNQ" name="privateKey" type="_ZgojYBvjEe2eBpLFwjhdNQ" association="_ZjuToBvjEe2eBpLFwjhdNQ"/>
+          <ownedAttribute xmi:id="_Zi3YAxvjEe2eBpLFwjhdNQ" name="UTXOs" type="_ZgvRERvjEe2eBpLFwjhdNQ" association="_ZjuToxvjEe2eBpLFwjhdNQ">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Zi3_ERvjEe2eBpLFwjhdNQ" value="new HashMap&lt;>()"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Zjb_0xvjEe2eBpLFwjhdNQ" name="Wallet" specification="_ZLHmYBvjEe2eBpLFwjhdNQ">
+            <ownedParameter xmi:id="_Zjb_1BvjEe2eBpLFwjhdNQ" type="_ZLD8ABvjEe2eBpLFwjhdNQ" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>generateKeyPairValues();
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Zjcm0BvjEe2eBpLFwjhdNQ" name="generateKeyPairValues" specification="_ZLI0gBvjEe2eBpLFwjhdNQ">
+            <language>java</language>
+            <body>try {
+         KeyPairGenerator keyGen = KeyPairGenerator.getInstance(&quot;ECDSA&quot;, &quot;BC&quot;);
+         SecureRandom random = SecureRandom.getInstance(&quot;SHA1PRNG&quot;);
+         ECGenParameterSpec ecSpec = new ECGenParameterSpec(&quot;prime192v1&quot;);
+         // Initialize the key generator and generate a KeyPair
+         keyGen.initialize(ecSpec, random); //256
+         KeyPair keyPair = keyGen.generateKeyPair();
+         // Set the public and private keys from the keyPair
+         privateKey = keyPair.getPrivate();
+         publicKey = keyPair.getPublic();
+
+     }catch(Exception e) {
+         throw new RuntimeException(e);
+     }
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_ZLHmYBvjEe2eBpLFwjhdNQ" name="Wallet" method="_Zjb_0xvjEe2eBpLFwjhdNQ">
+            <eAnnotations xmi:id="_ZLHmYRvjEe2eBpLFwjhdNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_ZLINcBvjEe2eBpLFwjhdNQ" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_ZLINcRvjEe2eBpLFwjhdNQ" type="_ZLD8ABvjEe2eBpLFwjhdNQ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ZLI0gBvjEe2eBpLFwjhdNQ" name="generateKeyPairValues" visibility="private" method="_Zjcm0BvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjoNABvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjoNARvjEe2eBpLFwjhdNQ _ZipVkRvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjoNARvjEe2eBpLFwjhdNQ" name="" type="_ZIaQoBvjEe2eBpLFwjhdNQ" association="_ZjoNABvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjqpQBvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjqpQRvjEe2eBpLFwjhdNQ _Zirx0BvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjqpQRvjEe2eBpLFwjhdNQ" name="" type="_ZJkuQBvjEe2eBpLFwjhdNQ" association="_ZjqpQBvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjrQURvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjrQUhvjEe2eBpLFwjhdNQ _ZisY4hvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjrQUhvjEe2eBpLFwjhdNQ" name="" type="_ZJkuQBvjEe2eBpLFwjhdNQ" association="_ZjrQURvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjrQVBvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjrQVRvjEe2eBpLFwjhdNQ _Zis_8RvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjrQVRvjEe2eBpLFwjhdNQ" name="" type="_ZJkuQBvjEe2eBpLFwjhdNQ" association="_ZjrQVBvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Zjr3YRvjEe2eBpLFwjhdNQ" name="" memberEnd="_Zjr3YhvjEe2eBpLFwjhdNQ _Ziu1JBvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_Zjr3YhvjEe2eBpLFwjhdNQ" name="" type="_ZKoeMBvjEe2eBpLFwjhdNQ" association="_Zjr3YRvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Zjr3ZBvjEe2eBpLFwjhdNQ" name="" memberEnd="_Zjr3ZRvjEe2eBpLFwjhdNQ _ZivcMxvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_Zjr3ZRvjEe2eBpLFwjhdNQ" name="" type="_ZKoeMBvjEe2eBpLFwjhdNQ" association="_Zjr3ZBvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjsecRvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjsechvjEe2eBpLFwjhdNQ _ZiyfgRvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjsechvjEe2eBpLFwjhdNQ" name="" type="_ZK2goBvjEe2eBpLFwjhdNQ" association="_ZjsecRvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjsedBvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjsedRvjEe2eBpLFwjhdNQ _ZiztohvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjsedRvjEe2eBpLFwjhdNQ" name="" type="_ZK5j8BvjEe2eBpLFwjhdNQ" association="_ZjsedBvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjsedxvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjseeBvjEe2eBpLFwjhdNQ _Zi0UsBvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjseeBvjEe2eBpLFwjhdNQ" name="" type="_ZK5j8BvjEe2eBpLFwjhdNQ" association="_ZjsedxvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjtskRvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjtskhvjEe2eBpLFwjhdNQ _Zi2J4xvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjtskhvjEe2eBpLFwjhdNQ" name="" type="_ZK5j8BvjEe2eBpLFwjhdNQ" association="_ZjtskRvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjtslBvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjtslRvjEe2eBpLFwjhdNQ _Zi2w8xvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjtslRvjEe2eBpLFwjhdNQ" name="" type="_ZLD8ABvjEe2eBpLFwjhdNQ" association="_ZjtslBvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjuToBvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjuToRvjEe2eBpLFwjhdNQ _Zi3YARvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjuToRvjEe2eBpLFwjhdNQ" name="" type="_ZLD8ABvjEe2eBpLFwjhdNQ" association="_ZjuToBvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ZjuToxvjEe2eBpLFwjhdNQ" name="" memberEnd="_ZjuTpBvjEe2eBpLFwjhdNQ _Zi3YAxvjEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_ZjuTpBvjEe2eBpLFwjhdNQ" name="" type="_ZLD8ABvjEe2eBpLFwjhdNQ" association="_ZjuToxvjEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_TUuOAB5EEe2eBpLFwjhdNQ" name="" memberEnd="_TUuOAR5EEe2eBpLFwjhdNQ _TUbTEB5EEe2eBpLFwjhdNQ">
+          <ownedEnd xmi:id="_TUuOAR5EEe2eBpLFwjhdNQ" name="" type="_ZK5j8BvjEe2eBpLFwjhdNQ" association="_TUuOAB5EEe2eBpLFwjhdNQ"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZH23ABvjEe2eBpLFwjhdNQ" name="google">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZH23ARvjEe2eBpLFwjhdNQ" name="gson">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ZH3eEBvjEe2eBpLFwjhdNQ" name="reflect">
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZhjwcRvjEe2eBpLFwjhdNQ" name="TypeToken"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZhjJYBvjEe2eBpLFwjhdNQ" name="Gson"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZGrLQBvjEe2eBpLFwjhdNQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZGrLQRvjEe2eBpLFwjhdNQ" name="security">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZHJFUBvjEe2eBpLFwjhdNQ" name="spec">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Zg5CEBvjEe2eBpLFwjhdNQ" name="EncodedKeySpec"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Zg5pIRvjEe2eBpLFwjhdNQ" name="PKCS8EncodedKeySpec"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Zg6QMRvjEe2eBpLFwjhdNQ" name="X509EncodedKeySpec"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Zhv9sBvjEe2eBpLFwjhdNQ" name="ECGenParameterSpec"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZgbIABvjEe2eBpLFwjhdNQ" name="NoSuchAlgorithmException"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ZgojYBvjEe2eBpLFwjhdNQ" name="PrivateKey"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ZgpKcRvjEe2eBpLFwjhdNQ" name="PublicKey"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZhTRwBvjEe2eBpLFwjhdNQ" name="Security"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ZiFU4BvjEe2eBpLFwjhdNQ" name="Key"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZGryUBvjEe2eBpLFwjhdNQ" name="sql">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZguC8RvjEe2eBpLFwjhdNQ" name="SQLException"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ZiasERvjEe2eBpLFwjhdNQ" name="Connection"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZGryURvjEe2eBpLFwjhdNQ" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZHOk4BvjEe2eBpLFwjhdNQ" name="stream">
+          <packagedElement xmi:type="uml:Class" xmi:id="_ZhKu4RvjEe2eBpLFwjhdNQ" name="Collectors"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ZhKu4xvjEe2eBpLFwjhdNQ" name="IntStream"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZguqARvjEe2eBpLFwjhdNQ" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZgvRERvjEe2eBpLFwjhdNQ" name="HashMap"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ZgvRExvjEe2eBpLFwjhdNQ" name="List"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Zgv4IRvjEe2eBpLFwjhdNQ" name="Map"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZhCzEBvjEe2eBpLFwjhdNQ" name="Arrays"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZhEBMRvjEe2eBpLFwjhdNQ" name="Base64"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ZhJgwBvjEe2eBpLFwjhdNQ" name="Iterator"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZhT40RvjEe2eBpLFwjhdNQ" name="Scanner"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZhoB4BvjEe2eBpLFwjhdNQ" name="Date"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZHZkABvjEe2eBpLFwjhdNQ" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZhMkEBvjEe2eBpLFwjhdNQ" name="File"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZiMpoBvjEe2eBpLFwjhdNQ" name="lang">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ZiNQsBvjEe2eBpLFwjhdNQ" name="Comparable"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZiWaoBvjEe2eBpLFwjhdNQ" name="Double"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZifkkRvjEe2eBpLFwjhdNQ" name="Object"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_Yn6LoBvjEe2eBpLFwjhdNQ">
+      <eAnnotations xmi:id="_Yn7ZwBvjEe2eBpLFwjhdNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_Yn92ABvjEe2eBpLFwjhdNQ" base_Package="_Yi-oUBvjEe2eBpLFwjhdNQ">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Generics xmi:id="_ZJPXEBvjEe2eBpLFwjhdNQ" genericsValue="ArrayList&lt;Byte>" base_Element="_ZJNh4BvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZJTBcBvjEe2eBpLFwjhdNQ" genericsValue="ArrayList&lt;Byte>" base_Element="_ZJRzUBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZJrb8BvjEe2eBpLFwjhdNQ" base_Element="_ZJqN0BvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Annotations xmi:id="_ZJxikBvjEe2eBpLFwjhdNQ" base_Element="_ZJqN0BvjEe2eBpLFwjhdNQ">
+    <annotations xmi:id="_ZJyJoBvjEe2eBpLFwjhdNQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_ZJ_lABvjEe2eBpLFwjhdNQ" genericsValue="Block" base_Element="_ZJ-W4BvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZKCBQBvjEe2eBpLFwjhdNQ" genericsValue="String, TxOutput" base_Element="_ZJ_lARvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZKGSsBvjEe2eBpLFwjhdNQ" genericsValue="TxRecord" base_Element="_ZKFroBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZKgiYBvjEe2eBpLFwjhdNQ" genericsValue="String, Integer" base_Element="_ZKcQ8BvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZKsvoBvjEe2eBpLFwjhdNQ" base_Element="_ZKsIkhvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Annotations xmi:id="_ZKuk0BvjEe2eBpLFwjhdNQ" base_Element="_ZKsIkhvjEe2eBpLFwjhdNQ">
+    <annotations xmi:id="_ZKuk0RvjEe2eBpLFwjhdNQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_ZgjD0BvjEe2eBpLFwjhdNQ" base_Element="_ZgbIABvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZgpKcBvjEe2eBpLFwjhdNQ" base_Element="_ZgojYBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZguC8BvjEe2eBpLFwjhdNQ" base_Element="_ZgpKcRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZguqABvjEe2eBpLFwjhdNQ" base_Element="_ZguC8RvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZgvREBvjEe2eBpLFwjhdNQ" base_Element="_ZguqARvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZgvREhvjEe2eBpLFwjhdNQ" base_Element="_ZgvRERvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_Zgv4IBvjEe2eBpLFwjhdNQ" base_Element="_ZgvRExvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_Zgy7cBvjEe2eBpLFwjhdNQ" base_Element="_Zgv4IRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_Zg5pIBvjEe2eBpLFwjhdNQ" base_Element="_Zg5CEBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_Zg6QMBvjEe2eBpLFwjhdNQ" base_Element="_Zg5pIRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhBk8BvjEe2eBpLFwjhdNQ" base_Element="_Zg6QMRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhEBMBvjEe2eBpLFwjhdNQ" base_Element="_ZhCzEBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhISoBvjEe2eBpLFwjhdNQ" base_Element="_ZhEBMRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhKu4BvjEe2eBpLFwjhdNQ" base_Element="_ZhJgwBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhKu4hvjEe2eBpLFwjhdNQ" base_Element="_ZhKu4RvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhLV8BvjEe2eBpLFwjhdNQ" base_Element="_ZhKu4xvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhQ1gBvjEe2eBpLFwjhdNQ" base_Element="_ZhMkEBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhT40BvjEe2eBpLFwjhdNQ" base_Element="_ZhTRwBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhVG8BvjEe2eBpLFwjhdNQ" base_Element="_ZhT40RvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zhe38BvjEe2eBpLFwjhdNQ" base_Element="_Zhdp0BvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Annotations xmi:id="_ZhhUMBvjEe2eBpLFwjhdNQ" base_Element="_Zhdp0BvjEe2eBpLFwjhdNQ">
+    <annotations xmi:id="_Zhh7QBvjEe2eBpLFwjhdNQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_ZhjwcBvjEe2eBpLFwjhdNQ" base_Element="_ZhjJYBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhkXgBvjEe2eBpLFwjhdNQ" base_Element="_ZhjwcRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhpQABvjEe2eBpLFwjhdNQ" base_Element="_ZhoB4BvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZhwkwBvjEe2eBpLFwjhdNQ" base_Element="_Zhv9sBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Zh02MBvjEe2eBpLFwjhdNQ" genericsValue="Miner" base_Element="_Zh0PIRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Zh5HoBvjEe2eBpLFwjhdNQ" genericsValue="String, Integer" base_Element="_Zh4gkRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Zh8yABvjEe2eBpLFwjhdNQ" genericsValue="String" base_Element="_Zh8K8hvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Zh-AIBvjEe2eBpLFwjhdNQ" genericsValue="Miner" base_Element="_Zh9ZERvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Zh-AIRvjEe2eBpLFwjhdNQ" genericsValue="ArrayList&lt;Byte>" base_Element="_Zh9ZEhvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Array xmi:id="_Zh_OQBvjEe2eBpLFwjhdNQ" base_Element="_Zh-AIhvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZiIYMBvjEe2eBpLFwjhdNQ" base_Element="_ZiFU4BvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZiI_QxvjEe2eBpLFwjhdNQ" genericsValue="TxRecord" base_Element="_ZiI_QRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZiNQsRvjEe2eBpLFwjhdNQ" base_Element="_ZiNQsBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZiSJMBvjEe2eBpLFwjhdNQ" genericsValue="Miner" base_Element="_ZiQUABvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZiWaoRvjEe2eBpLFwjhdNQ" base_Element="_ZiWaoBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZiaFABvjEe2eBpLFwjhdNQ" genericsValue="Block" base_Element="_ZiZd8RvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZibTIBvjEe2eBpLFwjhdNQ" base_Element="_ZiasERvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZidvYBvjEe2eBpLFwjhdNQ" genericsValue="String, Integer" base_Element="_ZichQBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Zie9gBvjEe2eBpLFwjhdNQ" genericsValue="String" base_Element="_ZieWchvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZifkkBvjEe2eBpLFwjhdNQ" genericsValue="String" base_Element="_Zie9ghvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZigLoBvjEe2eBpLFwjhdNQ" base_Element="_ZifkkRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Ziin4hvjEe2eBpLFwjhdNQ" genericsValue="TxInput" base_Element="_ZiiA1BvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Zij2ABvjEe2eBpLFwjhdNQ" genericsValue="TxInput" base_Element="_ZijO9hvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZipVkBvjEe2eBpLFwjhdNQ" base_Element="_Zim5UBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zip8oBvjEe2eBpLFwjhdNQ" base_Element="_ZipVkRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZitnABvjEe2eBpLFwjhdNQ" base_Element="_Zis_8RvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZiuOEBvjEe2eBpLFwjhdNQ" base_Element="_ZitnBRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZiuOEhvjEe2eBpLFwjhdNQ" base_Element="_ZiuOERvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Ziu1IBvjEe2eBpLFwjhdNQ" base_Element="_ZiuOExvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZivcMBvjEe2eBpLFwjhdNQ" genericsValue="TxRecord" base_Element="_Ziu1JBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZivcMhvjEe2eBpLFwjhdNQ" base_Element="_Ziu1JBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_ZivcNBvjEe2eBpLFwjhdNQ" genericsValue="String" base_Element="_ZivcMxvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZiwDQBvjEe2eBpLFwjhdNQ" base_Element="_ZivcMxvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZiwqURvjEe2eBpLFwjhdNQ" base_Element="_ZiwqUBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZixRYBvjEe2eBpLFwjhdNQ" base_Element="_ZiwqUhvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zix4cBvjEe2eBpLFwjhdNQ" base_Element="_ZixRYRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZiyfgBvjEe2eBpLFwjhdNQ" base_Element="_Zix4cRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZiyfghvjEe2eBpLFwjhdNQ" base_Element="_ZiyfgRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZiyfhBvjEe2eBpLFwjhdNQ" base_Element="_ZiyfgxvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZizGkBvjEe2eBpLFwjhdNQ" base_Element="_ZiyfhRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZiztoRvjEe2eBpLFwjhdNQ" base_Element="_ZiztoBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZiztoxvjEe2eBpLFwjhdNQ" base_Element="_ZiztohvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zi0UsRvjEe2eBpLFwjhdNQ" base_Element="_Zi0UsBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zi07wBvjEe2eBpLFwjhdNQ" base_Element="_Zi0UshvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Array xmi:id="_Zi07wxvjEe2eBpLFwjhdNQ" base_Element="_Zi07wRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zi07xBvjEe2eBpLFwjhdNQ" base_Element="_Zi07wRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Zi2w8BvjEe2eBpLFwjhdNQ" genericsValue="TxOutput" base_Element="_Zi2J4xvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zi2w8hvjEe2eBpLFwjhdNQ" base_Element="_Zi2J4xvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zi3YABvjEe2eBpLFwjhdNQ" base_Element="_Zi2w8xvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zi3YAhvjEe2eBpLFwjhdNQ" base_Element="_Zi3YARvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_Zi3_EBvjEe2eBpLFwjhdNQ" genericsValue="String, TxOutput" base_Element="_Zi3YAxvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zi3_EhvjEe2eBpLFwjhdNQ" base_Element="_Zi3YAxvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjqCMBvjEe2eBpLFwjhdNQ" base_Element="_ZjoNABvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjrQUBvjEe2eBpLFwjhdNQ" base_Element="_ZjqpQBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjrQUxvjEe2eBpLFwjhdNQ" base_Element="_ZjrQURvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_Zjr3YBvjEe2eBpLFwjhdNQ" base_Element="_ZjrQVBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_Zjr3YxvjEe2eBpLFwjhdNQ" base_Element="_Zjr3YRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjsecBvjEe2eBpLFwjhdNQ" base_Element="_Zjr3ZBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjsecxvjEe2eBpLFwjhdNQ" base_Element="_ZjsecRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjsedhvjEe2eBpLFwjhdNQ" base_Element="_ZjsedBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjtFgBvjEe2eBpLFwjhdNQ" base_Element="_ZjsedxvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjtskxvjEe2eBpLFwjhdNQ" base_Element="_ZjtskRvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjtslhvjEe2eBpLFwjhdNQ" base_Element="_ZjtslBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjuTohvjEe2eBpLFwjhdNQ" base_Element="_ZjuToBvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_ZjuTpRvjEe2eBpLFwjhdNQ" base_Element="_ZjuToxvjEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Generics xmi:id="_TUgLkB5EEe2eBpLFwjhdNQ" genericsValue="TxInput" base_Element="_TUbTEB5EEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_TUlEEB5EEe2eBpLFwjhdNQ" base_Element="_TUbTEB5EEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:Reference xmi:id="_TUxRUB5EEe2eBpLFwjhdNQ" base_Element="_TUuOAB5EEe2eBpLFwjhdNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_y2T2YB5NEe2eBpLFwjhdNQ" base_Element="_y2QzEB5NEe2eBpLFwjhdNQ"/>
+</xmi:XMI>
